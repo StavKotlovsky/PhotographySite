@@ -1,0 +1,15 @@
+.home-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 35px;
+    .home-img{
+        // border-bottom: 1px black solid;
+
+        img{
+            width: 30%;
+    
+        }
+    }
+}

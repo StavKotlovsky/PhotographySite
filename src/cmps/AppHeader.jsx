@@ -1,13 +1,13 @@
-// import logo from '../assets/logo.jpg'
+import { NavLink } from 'react-router-dom'
+
 export function AppHeader() {
   return (
     <header className="app-header">
       <nav>
-        <div className="logo">{/* <img src={<logo />} alt="" /> */}</div>
-        <span>צילומי הריון</span>
-        <span>צילומי משפחה</span>
-        <span>צילומי תדמית</span>
-        <span>בית</span>
+        <NavLink to="/family">צילומי משפחה</NavLink>
+        <NavLink to="/pregnency">צילומי הריון</NavLink>
+        <NavLink to="/portrait">צילומי תדמית</NavLink>
+        <NavLink to="/">בית</NavLink>
       </nav>
     </header>
   )

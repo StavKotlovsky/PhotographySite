@@ -1,3 +1,5 @@
+import { PhotoList } from '../cmps/PhotoList'
+
 export const FamilyPage = () => {
   return (
     <section>
