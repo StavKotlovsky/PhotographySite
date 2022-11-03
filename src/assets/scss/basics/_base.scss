@@ -18,7 +18,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 h1,
@@ -33,44 +33,44 @@ p {
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-  &:hover {
-    text-decoration: underline;
-  }
-}
+// a {
+//   text-decoration: none;
+//   color: inherit;
+//   &:hover {
+//     text-decoration: underline;
+//   }
+// }
 
-button {
-  font-family: inherit;
-  cursor: pointer;
+// button {
+//   font-family: inherit;
+//   cursor: pointer;
 
-  * {
-    pointer-events: none;
-  }
-}
+//   * {
+//     pointer-events: none;
+//   }
+// }
 
-input {
-  font-family: inherit;
-  text-align: inherit;
-}
+// input {
+//   font-family: inherit;
+//   text-align: inherit;
+// }
 
-// MAC like scrollbar
-::-webkit-scrollbar {
-  width: 8px;
-  background-color: rgba(0, 0, 0, 0);
-  -webkit-border-radius: 100px;
-}
+// // MAC like scrollbar
+// ::-webkit-scrollbar {
+//   width: 8px;
+//   background-color: rgba(0, 0, 0, 0);
+//   -webkit-border-radius: 100px;
+// }
 
-::-webkit-scrollbar:hover {
-  background-color: rgba(0, 0, 0, 0.09);
-}
+// ::-webkit-scrollbar:hover {
+//   background-color: rgba(0, 0, 0, 0.09);
+// }
 
-::-webkit-scrollbar-thumb:vertical {
-  background: rgba(0, 0, 0, 0.5);
-  -webkit-border-radius: 100px;
-}
+// ::-webkit-scrollbar-thumb:vertical {
+//   background: rgba(0, 0, 0, 0.5);
+//   -webkit-border-radius: 100px;
+// }
 
-::-webkit-scrollbar-thumb:vertical:active {
-  -webkit-border-radius: 100px;
-}
+// ::-webkit-scrollbar-thumb:vertical:active {
+//   -webkit-border-radius: 100px;
+// }

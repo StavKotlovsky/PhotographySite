@@ -14,10 +14,21 @@
         // margin-right: 20px;
     a{
         cursor: pointer;
+        text-decoration: none;
+        color: black;
+    }
+    a:not(:last-of-type) {
         margin-inline-end: 50px;
     }
-    // a:not(:last-of-type) {
-    //     margin-inline-end: 50px;
-    // }
-    }
+}
+.header-logo{
+    background-image: url('../../logo/logo.jpeg');
+    background-size:contain;
+    
+}
+}
+@media screen and (max-width:500px){
+  .app-header{
+    background-color: aqua;
+  }
 }

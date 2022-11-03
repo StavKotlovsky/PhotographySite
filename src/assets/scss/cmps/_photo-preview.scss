@@ -1,9 +1,15 @@
-.photo-card{
-    display: flex;
-    // flex-wrap: wrap;
-    width: 300px;
-    margin: 10px;
-    padding: 10px;
-    background: blueviolet;
-    border-radius: 10px;
+// .photo-card{
+//     display: flex;
+//     // flex-wrap: wrap;
+//     width: 300px;
+//     margin: 10px;
+//     padding: 10px;
+//     background: blueviolet;
+//     border-radius: 10px;
+// }
+.photo-preview{
+    &:hover{
+        filter:brightness(90%);
+        cursor: pointer;
+    }
 }
