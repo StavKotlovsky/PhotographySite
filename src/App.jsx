@@ -7,6 +7,7 @@ import { PregnancyPage } from './pages/PregnancyPage'
 import { PortraitPage } from './pages/PortraitPage'
 
 import './assets/scss/main.scss'
+import { PhotoDetails } from './pages/PhotoDetails'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <AppHeader />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/photo/:id" element={<PhotoDetails />} />
           <Route path="/family" element={<FamilyPage />} />
           <Route path="/pregnency" element={<PregnancyPage />} />
           <Route path="/portrait" element={<PortraitPage />} />

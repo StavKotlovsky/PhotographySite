@@ -1,17 +1,24 @@
-import { useNavigate, useParams } from 'react-router-dom'
-import { imageService } from '../services/image.service'
-export const PhotoDetails = () => {
-  // const [photo, setPhoto] = useState()
-  // const params = useParams()
-  // const navigate = useNavigate()
+import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import { cloudinaryService } from '../services/cloudinary.service'
 
-  // async function loadPhotos() {
-  //   const contactId = params.id
-  //   const photo = await imageService.getContactById(contactId)
-  //   setPhoto(photo)
-  // }
+export const PhotoDetails = () => {
+  const [photo, setPhoto] = useState()
+  const params = useParams()
+  // const navigate = useNavigate()
+  useEffect(() => {
+    loadPhotos()
+  }, [params.id])
+
+  async function loadPhotos() {
+    const photoId = params.id
+    const photo = await cloudinaryService.getPhotosByTag(photoId)
+    console.log(photo)
+    setPhoto(photo)
+  }
+  if (!photo) return <div>Loading...</div>
   return (
-    <div>
+    <div className="photo-details">
       <h1>hiii</h1>
     </div>
   )
