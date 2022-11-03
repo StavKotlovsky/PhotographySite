@@ -1,34 +1,45 @@
 .app-header{
+    width: 90%;
     nav{
-        .logo{
-            display: flex;
-            // flex: 1;
-            margin-right: 100px;
-        }
-        box-shadow: 0px 1px 0px 0px rgb(0 0 0 / 10%);
+        height: 50px;
         display: flex;
+        border-bottom: 1px solid #1f19192e;
         align-items: center;
         justify-content: flex-end;
-        padding: 10px;
-        height: 5rem;
-        // margin-right: 20px;
+        margin-top: 20px;
+        position: relative;
+        .header-logo{
+    display: flex;
+    position: absolute;
+    left: 20px;
+    bottom: 5px;
+    .flower{
+        width: 4em;
+        height: 3.4em;
+      background-image: url('../../img/lotus.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+        }
     a{
         cursor: pointer;
         text-decoration: none;
         color: black;
+        font-size: 14px;
+        margin-inline-end: 20px;
+        font-family: Helvetica;
     }
     a:not(:last-of-type) {
-        margin-inline-end: 50px;
+        margin-inline-end: 90px;
     }
-}
-.header-logo{
-    background-image: url('../../logo/logo.jpeg');
-    background-size:contain;
-    
-}
-}
-@media screen and (max-width:500px){
-  .app-header{
-    background-color: aqua;
   }
-}
+  }
+  @media screen and (max-width:500px){
+  .app-header{
+    nav{
+        background-color: aqua;
+        flex-direction: column;
+    }
+  }
+  }
+  

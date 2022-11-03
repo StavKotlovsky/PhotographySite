@@ -1,12 +1,23 @@
-import { imageService } from '../services/image.service.js'
+import { cloudinaryService } from '../services/cloudinary.service.js'
+import { useEffect } from 'react'
+
 import { useState } from 'react'
-import { PhotoList } from '../cmps/PhotoList'
+import { PhotoList } from '../cmps/PhotoList.jsx'
 
 export const PregnancyPage = () => {
-  // const [images, setImage] = useState(imageService.query())
-  // return (
-  //   <section className="pregnency-photo">
-  //     <PhotoList images={images} />
-  //   </section>
-  // )
+  const [photos, setPhotos] = useState([])
+  useEffect(() => {
+    loadPhotos()
+  }, [])
+
+  const loadPhotos = async () => {
+    const photos = await cloudinaryService.getPhotosByTag('pregnancy')
+    setPhotos(photos)
+  }
+
+  return (
+    <section>
+      <PhotoList photos={photos} />
+    </section>
+  )
 }

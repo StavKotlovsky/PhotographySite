@@ -5,11 +5,10 @@
     text-align: center;
     margin-top: 35px;
     .home-img{
-        // border-bottom: 1px black solid;
-
+        display: flex;
+        justify-content: center;
         img{
-            width: 30%;
-    
+            width: 20rem;
         }
     }
 }
