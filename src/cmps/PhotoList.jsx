@@ -7,7 +7,13 @@ export function PhotoList({ photos }) {
       <li className="clean-list">
         {photos.map((photo) => {
           const myImage = cloudinaryService.cld.image(photo.id)
-          return <PhotoPreview key={photo.id} imgUrl={myImage.toURL()} />
+          return (
+            <PhotoPreview
+              key={photo.id}
+              imgUrl={myImage.toURL()}
+              photoId={photo.id}
+            />
+          )
         })}
       </li>
     </ul>

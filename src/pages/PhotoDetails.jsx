@@ -12,9 +12,10 @@ export const PhotoDetails = () => {
 
   async function loadPhotos() {
     const photoId = params.id
-    const photo = await cloudinaryService.getPhotosByTag(photoId)
-    console.log(photo)
-    setPhoto(photo)
+    console.log(params.id)
+    // const photo = await cloudinaryService.getPhotoById(photoId)
+    // console.log(photo)
+    // setPhoto(photo)
   }
   if (!photo) return <div>Loading...</div>
   return (

@@ -19,14 +19,6 @@ const getPhotosByTag = async (tagName) => {
   }))
 }
 
-// const getPublicIdsByTag = async (tagName) => {
-//   const res = await axios.get(
-//     `https://res.cloudinary.com/${cloudName}/image/list/${tagName}.json`
-//   )
-//   console.log(' res.data.resources', res.data.resources)
-//   return res.data.resources.map((r) => r.public_id)
-// }
-
 export const cloudinaryService = {
   getPhotosByTag,
   cld,
