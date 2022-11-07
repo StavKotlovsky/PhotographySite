@@ -1,43 +1,60 @@
 .home-page{
     // display: flex;
+    // background-color: antiquewhite;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
+  
     // padding: 50px;
     // .home-img{
     //     display: flex;
     //     justify-content: center;
         img{
             width: 35%;
+            margin-top: 20px;
         }
     // }
 }
-//     .home-page-contant{
-//         display: flex;
+    .home-page-content{
+        background-color: antiquewhite;
+        // margin-top: 10px;
+//       display: flex;
 //         flex-direction: column;
 //         padding: 50px;
 //         align-items: center;
 //         text-align: center;
-//     }
+    }
     .about{
         display: flex;
-    // justify-content: space-between;
-    // gap: 30px;
+    gap: 40px;
     // align-items: center;
-    margin-top: 20%;
+    margin-top: 10%;
+    padding: 15px;
+    background-color: #ecd1b3;
+    margin-bottom: 15%;
+    align-items: center;
+    justify-content: center;
     span{
-        font-size: 15px;
         width: 50%;
-        line-height: 30px;
+        line-height: 25px;
+        // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        // font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+        h1{
+            font-size: 16px;
+
+        }
     }
     
     .about-image{
         background-image: url('../../img/roni-image.jpeg');
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
-        width: 50%;
-        // height: 300px;
+        background-position: center center;
+        width: 300px;
+        height: 400px;
         
     }
 }
@@ -45,12 +62,12 @@
 max-height: calc(65vh - 80px) !important;
 
 }
-.image-gallery-right-nav {
-right: 20%;
-}
-.image-gallery-left-nav{
-left: 20%;
-}
+// .image-gallery-right-nav {
+// right: 10%;
+// }
+// .image-gallery-left-nav{
+// left: 10%;
+// }
 .image-gallery-svg{
 height: 70px !important;
 }

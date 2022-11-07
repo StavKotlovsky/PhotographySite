@@ -1,9 +1,10 @@
 .app-header{
     width: 90%;
     nav{
+       
         height: 50px;
         display: flex;
-        border-bottom: 1px solid #1f19192e;
+        border-bottom: 1px solid antiquewhite;
         align-items: center;
         justify-content: flex-end;
         margin-top: 20px;
@@ -15,7 +16,7 @@
     bottom: 5px;
     .flower{
         width: 4em;
-        height: 3.4em;
+        height: 3.5em;
       background-image: url('../../img/lotus.png');
       background-size: contain;
       background-repeat: no-repeat;
@@ -27,7 +28,7 @@
         color: black;
         font-size: 14px;
         margin-inline-end: 20px;
-        font-family: Helvetica;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     a:not(:last-of-type) {
         margin-inline-end: 90px;

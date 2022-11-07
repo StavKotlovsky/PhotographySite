@@ -27,11 +27,11 @@ export const HomePage = () => {
       <div className="home-img">
         <img src={logoUrl} alt="logo" />
       </div>
-      <div className="home-page-contant">
+      <div className="home-page-content">
         <ImageGallery items={images} />
         <div className="about">
           <span className="about-image"></span>
-          <span>
+          <span className="cotent">
             <h1>
               לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו
               ננבי, צמוקו בלוקריה שיצמה ברורק. קוואזי במר מודוף. אודיפו בלאסטיק
