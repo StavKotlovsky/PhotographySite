@@ -1,35 +1,60 @@
 .home-page{
-    display: flex;
+    // display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
-    padding: 50px;
-    .home-img{
-        display: flex;
-        justify-content: center;
+    // padding: 50px;
+    // .home-img{
+    //     display: flex;
+    //     justify-content: center;
         img{
-            width: 20rem;
+            width: 35%;
         }
-    }
-    .home-page-contant{
-        display: flex;
-        flex-direction: column;
-        padding: 50px;
-        align-items: center;
-        text-align: center;
-    }
+    // }
+}
+//     .home-page-contant{
+//         display: flex;
+//         flex-direction: column;
+//         padding: 50px;
+//         align-items: center;
+//         text-align: center;
+//     }
     .about{
         display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    align-items: center;
-    margin-top: 10%;
-    // padding: 70px;
+    // justify-content: space-between;
+    // gap: 30px;
+    // align-items: center;
+    margin-top: 20%;
     span{
         font-size: 15px;
-        width: 90%;
+        width: 50%;
         line-height: 30px;
     }
+    
+    .about-image{
+        background-image: url('../../img/roni-image.jpeg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50%;
+        // height: 300px;
+        
     }
+}
+.image-gallery-image{
+max-height: calc(65vh - 80px) !important;
+
+}
+.image-gallery-right-nav {
+right: 20%;
+}
+.image-gallery-left-nav{
+left: 20%;
+}
+.image-gallery-svg{
+height: 70px !important;
+}
+.image-gallery-fullscreen-button,
+.image-gallery-play-button{
+display: none;
 }

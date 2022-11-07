@@ -23,16 +23,14 @@ export const HomePage = () => {
   ]
 
   return (
-    <section className="home-page">
+    <section className="home-page flex">
       <div className="home-img">
         <img src={logoUrl} alt="logo" />
       </div>
       <div className="home-page-contant">
         <ImageGallery items={images} />
         <div className="about">
-          <div>
-            <img src={demoUrl} alt="" />
-          </div>
+          <span className="about-image"></span>
           <span>
             <h1>
               לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו

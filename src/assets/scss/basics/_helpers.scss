@@ -17,20 +17,20 @@
 }
 
 // // Positioning
-// .flex {
-//     display: flex;
-//     &.column { flex-direction: column; }
-//     &.justify-center { justify-content: center; }
-//     &.align-center { align-items: center; }
-//     &.wrap { flex-wrap: wrap; }
-//     &.space-between { justify-content: space-between; }
-//     &.space-around { justify-content: space-around; }
-//     &.auto-center {
-//         justify-content: center;
-//         align-items: center;
-//     }
-//     > *.full-grow { flex: 1; }
-// }
+.flex {
+    display: flex;
+    &.column { flex-direction: column; }
+    &.justify-center { justify-content: center; }
+    &.align-center { align-items: center; }
+    &.wrap { flex-wrap: wrap; }
+    &.space-between { justify-content: space-between; }
+    &.space-around { justify-content: space-around; }
+    &.auto-center {
+        justify-content: center;
+        align-items: center;
+    }
+    > *.full-grow { flex: 1; }
+}
 
 // .text-center { text-align: center; }
 // .text-right { text-align: right; }
