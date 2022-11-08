@@ -1,5 +1,5 @@
 .app-header{
-    width: 90%;
+    // width: 100%;
     nav{
        
         height: 50px;
@@ -25,13 +25,19 @@
     a{
         cursor: pointer;
         text-decoration: none;
-        color: black;
-        font-size: 14px;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        font-size: 16px;
         margin-inline-end: 20px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 3px;
+        &:hover{
+            color: rgb(151, 65, 73);
+            // text-decoration: underline;
+        }
     }
     a:not(:last-of-type) {
-        margin-inline-end: 90px;
+        margin-inline-end: 100px;
     }
   }
   }

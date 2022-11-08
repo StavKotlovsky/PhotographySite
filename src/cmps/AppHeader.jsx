@@ -7,9 +7,9 @@ export function AppHeader() {
         <div className="header-logo">
           <span className="flower"></span>
         </div>
-        <NavLink to="/family">צילומי משפחה</NavLink>
-        <NavLink to="/pregnency">צילומי הריון</NavLink>
-        <NavLink to="/portrait">צילומי תדמית</NavLink>
+        <NavLink to="/family">משפחה</NavLink>
+        <NavLink to="/pregnency">עסקים</NavLink>
+        {/* <NavLink to="/portrait">י</NavLink> */}
         <NavLink to="/">בית</NavLink>
       </nav>
     </header>
