@@ -1,34 +1,20 @@
 .home-page{
-    // display: flex;
-    // background-color: antiquewhite;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
   
-    // padding: 50px;
-    // .home-img{
-    //     display: flex;
-    //     justify-content: center;
         img{
             width: 35%;
             margin-top: 20px;
         }
-    // }
 }
     .home-page-content{
         background-color: antiquewhite;
-        // margin-top: 10px;
-//       display: flex;
-//         flex-direction: column;
-//         padding: 50px;
-//         align-items: center;
-//         text-align: center;
     }
     .about{
         display: flex;
     gap: 40px;
-    // align-items: center;
     margin-top: 10%;
     padding: 15px;
     background-color: #ecd1b3;
@@ -38,8 +24,6 @@
     span{
         width: 50%;
         line-height: 25px;
-        // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        // font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-family: 'Segoe UI';
         
         h1{
@@ -63,12 +47,6 @@
 max-height: calc(65vh - 80px) !important;
 
 }
-// .image-gallery-right-nav {
-// right: 10%;
-// }
-// .image-gallery-left-nav{
-// left: 10%;
-// }
 .image-gallery-svg{
 height: 70px !important;
 }
