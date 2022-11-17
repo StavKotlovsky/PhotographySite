@@ -1,38 +1,48 @@
-.home-page{
+.home-page {
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
-  
-        img{
-            width: 35%;
-            margin-top: 20px;
-        }
-}
-    .home-page-content{
-        background-color: antiquewhite;
+
+    img {
+        width: 35%;
+        margin-top: 20px;
     }
-    .about{
-        display: flex;
+}
+
+.home-page-content {
+
+    // background-color: antiquewhite;
+    h1 {
+        margin: 50px;
+        border-top: solid 1px#945f2f54;
+        border-bottom: solid 1px #945f2f54;
+        padding: 10px;
+    }
+}
+
+.about {
+    display: flex;
     gap: 40px;
-    margin-top: 10%;
+    margin-top: 2%;
     padding: 15px;
-    background-color: #ecd1b3;
-    margin-bottom: 15%;
+    // background-color: #763a0340;
+    margin-bottom: 5%;
     align-items: center;
     justify-content: center;
-    span{
+
+    span {
         width: 50%;
         line-height: 25px;
         font-family: 'Segoe UI';
-        
-        h1{
-            font-size: 16px;
+
+        h1 {
+            font-size: initial;
 
         }
     }
-    
-    .about-image{
+
+    .about-image {
         background-image: url('../../img/roni-image.jpeg');
         background-size: cover;
         background-repeat: no-repeat;
@@ -40,17 +50,20 @@
         width: 300px;
         height: 300px;
         border-radius: 100%;
-        
+
     }
 }
-.image-gallery-image{
-max-height: calc(65vh - 80px) !important;
+
+.image-gallery-image {
+    max-height: calc(80vh - 80px) !important;
 
 }
-.image-gallery-svg{
-height: 70px !important;
+
+.image-gallery-svg {
+    height: 70px !important;
 }
+
 .image-gallery-fullscreen-button,
-.image-gallery-play-button{
-display: none;
+.image-gallery-play-button {
+    display: none;
 }

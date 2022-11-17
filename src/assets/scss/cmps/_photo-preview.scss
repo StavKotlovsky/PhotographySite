@@ -1,18 +1,10 @@
-// .photo-card{
-//     display: flex;
-//     // flex-wrap: wrap;
-//     width: 300px;
-//     margin: 10px;
-//     padding: 10px;
-//     background: blueviolet;
-//     border-radius: 10px;
-// }
-.photo-preview{
+.photo-preview {
     display: flex;
     flex-direction: column;
     height: fit-content;
-    &:hover{
-        filter:brightness(90%);
+
+    &:hover {
+        filter: brightness(90%);
         cursor: pointer;
     }
 }

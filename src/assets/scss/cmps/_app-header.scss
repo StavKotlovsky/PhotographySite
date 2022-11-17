@@ -1,52 +1,57 @@
-.app-header{
-    // width: 100%;
-    nav{
-       
+.app-header {
+    nav {
+
         height: 50px;
         display: flex;
-        border-bottom: 1px solid antiquewhite;
+        // border-bottom: 1px solid antiquewhite;
         align-items: center;
         justify-content: flex-end;
         margin-top: 20px;
         position: relative;
-        .header-logo{
-    display: flex;
-    position: absolute;
-    left: 20px;
-    bottom: 5px;
-    .flower{
-        width: 4em;
-        height: 3.5em;
-      background-image: url('../../img/lotus.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
+
+        .header-logo {
+            display: flex;
+            position: absolute;
+            left: 20px;
+            bottom: 5px;
+
+            .flower {
+                width: 4em;
+                height: 3.5em;
+                background-image: url('../../img/lotus.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
         }
-    a{
-        cursor: pointer;
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-        font-weight: 600;
-        font-size: 16px;
-        margin-inline-end: 20px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        letter-spacing: 3px;
-        &:hover{
-            color: rgb(151, 65, 73);
-            // text-decoration: underline;
+
+        a {
+            cursor: pointer;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            border-top: solid 1px#945f2f54;
+            border-bottom: solid 1px #945f2f54;
+            padding: 3px;
+            font-size: 15px;
+            margin-inline-end: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 2px;
+
+            &:hover {
+                color: rgb(148, 130, 104);
+            }
+        }
+
+        a:not(:last-of-type) {
+            margin-inline-end: 100px;
         }
     }
-    a:not(:last-of-type) {
-        margin-inline-end: 100px;
+}
+
+@media screen and (max-width:500px) {
+    .app-header {
+        nav {
+            background-color: aqua;
+            flex-direction: column;
+        }
     }
-  }
-  }
-  @media screen and (max-width:500px){
-  .app-header{
-    nav{
-        background-color: aqua;
-        flex-direction: column;
-    }
-  }
-  }
-  
+}
