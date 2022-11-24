@@ -29,7 +29,7 @@ export const HomePage = () => {
       </div>
       <div className="home-page-content">
         <ImageGallery items={images} />
-        <h1 className="about-title">קצת עלי</h1>
+        <h1 className="about-title">קצת עליי</h1>
         <div className="about">
           <span className="about-image"></span>
           <span className="cotent">
