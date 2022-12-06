@@ -10,9 +10,8 @@
 
         .header-logo {
             display: flex;
-            position: absolute;
-            left: 20px;
-            bottom: 5px;
+            flex: 1;
+            margin-left: 15px;
 
             .flower {
                 width: 4em;
@@ -47,10 +46,10 @@
 }
 
 // @media screen and (max-width:500px) {
-    //     .app-header {
-    //         nav {
-    //             background-color: aqua;
-    //             flex-direction: column;
-    //         }
-    //     }
-    // }
+//     .app-header {
+//         nav {
+//             background-color: aqua;
+//             flex-direction: column;
+//         }
+//     }
+// }

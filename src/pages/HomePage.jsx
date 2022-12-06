@@ -29,18 +29,18 @@ export const HomePage = () => {
       </div>
       <div className="home-page-content">
         <ImageGallery items={images} />
-        <h1 className="about-title">קצת עליי</h1>
         <div className="about">
           <span className="about-image"></span>
           <span className="cotent">
-            <h1>
+            <h1 className="about-title">קצת עליי</h1>
+            <h2>
               לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו
               ננבי, צמוקו בלוקריה שיצמה ברורק. קוואזי במר מודוף. אודיפו בלאסטיק
               מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח
               לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה
               ומרגשח. עמחליף ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף בגורמי
               מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
-            </h1>
+            </h2>
           </span>
         </div>
       </div>

@@ -13,17 +13,15 @@
 .home-page-content {
 
     h1 {
-        margin: 50px;
-        border-top: solid 1px#945f2f54;
-        border-bottom: solid 1px #945f2f54;
         padding: 10px;
+        font-weight: 600;
     }
 }
 
 .about {
     display: flex;
     gap: 40px;
-    margin-top: 2%;
+    margin-top: 7%;
     padding: 15px;
     margin-bottom: 5%;
     align-items: center;
@@ -34,9 +32,9 @@
         line-height: 25px;
         font-family: 'Segoe UI';
 
-        h1 {
+        h1,
+        h2 {
             font-size: initial;
-
         }
     }
 
