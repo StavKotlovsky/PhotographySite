@@ -1,12 +1,17 @@
 .app-header {
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    background-color: white;
+
     nav {
 
-        height: 50px;
+        // height: 70px;
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        margin-top: 20px;
-        position: relative;
+        padding: 10px;
+        border-bottom: solid 1px #400b5742;
 
         .header-logo {
             display: flex;
@@ -26,8 +31,8 @@
             cursor: pointer;
             text-decoration: none;
             color: black;
-            border-top: solid 1px#945f2f54;
-            border-bottom: solid 1px #945f2f54;
+            // border-top: solid 1px#945f2f54;
+            // border-bottom: solid 1px #945f2f54;
             padding: 3px;
             font-size: 15px;
             margin-inline-end: 20px;
@@ -35,7 +40,12 @@
             letter-spacing: 2px;
 
             &:hover {
-                color: rgb(148, 130, 104);
+                color: #3c1d4af6;
+                font-weight: 500;
+            }
+
+            &:active {
+                color: #3c1d4af6;
             }
         }
 
