@@ -13,7 +13,8 @@ const getPhotosByTag = async (tagName) => {
     `https://res.cloudinary.com/${cloudName}/image/list/${tagName}.json`
   )
   return res.data.resources.map((r) => ({
-    id: r.public_id,
+    id: r.public_id.replaceAll('/', '_'),
+    path: r.public_id,
     description: r.context?.custom.alt,
     price: r.context?.custom.caption,
   }))

@@ -16,7 +16,7 @@ function App() {
         <AppHeader />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/photo/:id" element={<PhotoDetails />} />
+          <Route path="/:popo/:id" element={<PhotoDetails />} />
           <Route path="/family" element={<FamilyPage />} />
           <Route path="/pregnency" element={<PregnancyPage />} />
           <Route path="/portrait" element={<PortraitPage />} />
