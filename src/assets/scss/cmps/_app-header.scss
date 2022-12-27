@@ -1,12 +1,11 @@
 .app-header {
     position: fixed;
     width: 100%;
+    top: 0;
     z-index: 20;
     background-color: white;
 
     nav {
-
-        // height: 70px;
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -31,13 +30,12 @@
             cursor: pointer;
             text-decoration: none;
             color: black;
-            // border-top: solid 1px#945f2f54;
-            // border-bottom: solid 1px #945f2f54;
             padding: 3px;
             font-size: 15px;
             margin-inline-end: 20px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             letter-spacing: 2px;
+            margin-inline-start: 40px;
 
             &:hover {
                 color: #3c1d4af6;
@@ -50,7 +48,7 @@
         }
 
         a:not(:last-of-type) {
-            margin-inline-end: 100px;
+            margin-inline-end: 80px;
         }
     }
 }
