@@ -20,7 +20,10 @@ const getPhotosByTag = async (tagName) => {
   }))
 }
 
+async function getPhotoById(id) {}
+
 export const cloudinaryService = {
   getPhotosByTag,
+  getPhotoById,
   cld,
 }

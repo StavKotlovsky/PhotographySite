@@ -11,6 +11,10 @@
 }
 
 .home-page-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
     h1 {
         padding: 10px;
@@ -68,4 +72,18 @@
 .image-gallery-fullscreen-button,
 .image-gallery-play-button {
     display: none;
+}
+
+
+
+.grid-home-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    margin: 4rem;
+
+    img {
+        width: 100%;
+    }
+
 }

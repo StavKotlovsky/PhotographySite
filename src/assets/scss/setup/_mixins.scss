@@ -86,7 +86,35 @@
     &::before {
         content: open-quote;
     }
+
     &::after {
         content: close-quote;
+    }
+}
+
+
+@mixin dropdown {
+    position: relative;
+
+    &:hover {
+        ul {
+            display: block;
+        }
+    }
+
+    ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: block;
+            width: 100%;
+        }
     }
 }

@@ -1,4 +1,8 @@
 import logoUrl from '../assets/logo/logo.jpeg'
+import img100 from '../assets/img/100.jpg'
+import img101 from '../assets/img/101.jpg'
+import img102 from '../assets/img/102.jpg'
+import img103 from '../assets/img/103.jpg'
 import ImageGallery from 'react-image-gallery'
 
 export const HomePage = () => {
@@ -25,6 +29,10 @@ export const HomePage = () => {
 
       <div className="home-page-content">
         <ImageGallery items={images} />
+        <div className="grid-home-page">
+          <img src={img100} alt="" />
+          <img src={img101} alt="" />
+        </div>
 
         <div className="about">
           <span className="about-image"></span>

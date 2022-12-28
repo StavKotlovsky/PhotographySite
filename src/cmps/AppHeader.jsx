@@ -8,7 +8,7 @@ export function AppHeader() {
           <span className="flower"></span>
         </div>
         <NavLink to="/family">משפחה</NavLink>
-        <NavLink to="/pregnency">עסקים</NavLink>
+        <NavLink to="/pregnency">הריון</NavLink>
         <NavLink to="/">בית</NavLink>
       </nav>
     </header>
