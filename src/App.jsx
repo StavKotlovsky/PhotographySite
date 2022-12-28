@@ -5,9 +5,10 @@ import { HomePage } from './pages/HomePage'
 import { FamilyPage } from './pages/FamilyPage'
 import { PregnancyPage } from './pages/PregnancyPage'
 import { PortraitPage } from './pages/PortraitPage'
+import { WorkPage } from './pages/WorkPage'
+import { PhotoDetails } from './pages/PhotoDetails'
 
 import './assets/scss/main.scss'
-import { PhotoDetails } from './pages/PhotoDetails'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/:popo/:id" element={<PhotoDetails />} />
           <Route path="/family" element={<FamilyPage />} />
           <Route path="/pregnency" element={<PregnancyPage />} />
+          <Route path="/work" element={<WorkPage />} />
           <Route path="/portrait" element={<PortraitPage />} />
         </Routes>
       </section>

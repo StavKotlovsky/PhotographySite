@@ -9,15 +9,15 @@ export const HomePage = () => {
   const images = [
     {
       original:
-        'https://res.cloudinary.com/stavk22/image/upload/v1666784089/Pregnancy/IMG_2735_pcfnqj.jpg',
+        'https://res.cloudinary.com/stavk22/image/upload/v1672230433/Pregnancy/IMG_2318_truo84.jpg',
     },
     {
       original:
-        'https://res.cloudinary.com/stavk22/image/upload/v1666784084/Pregnancy/IMG_1324_dj7r6c.jpg',
+        'https://res.cloudinary.com/stavk22/image/upload/v1672231595/work/IMG_8791_bcuif9.jpg',
     },
     {
       original:
-        'https://res.cloudinary.com/stavk22/image/upload/v1667497380/family/IMG_0313_dk1pxy.jpg',
+        'https://res.cloudinary.com/stavk22/image/upload/v1672231360/family/IMG_4606_hlk3cq.jpg',
     },
   ]
 

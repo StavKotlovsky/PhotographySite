@@ -9,6 +9,7 @@ export function AppHeader() {
         </div>
         <NavLink to="/family">משפחה</NavLink>
         <NavLink to="/pregnency">הריון</NavLink>
+        <NavLink to="/work">עסקים</NavLink>
         <NavLink to="/">בית</NavLink>
       </nav>
     </header>
