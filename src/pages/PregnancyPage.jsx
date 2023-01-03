@@ -14,7 +14,7 @@ export const PregnancyPage = () => {
     const photos = await cloudinaryService.getPhotosByTag('pregnancy')
     setPhotos(photos)
   }
-
+  if (!photos) return <div>loading...</div>
   return (
     <section>
       <PhotoList photos={photos} />

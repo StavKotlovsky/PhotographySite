@@ -11,20 +11,15 @@ export const PhotoDetails = () => {
   }, [params.id])
 
   async function loadPhotos() {
-    const photo = cloudinaryService.cld.image(params.id)
-    console.log(photo)
-    setPhoto(photo)
+    console.log(params.id)
+    // const photo = cloudinaryService.getPhotoById(photo.publicID)
+    // setPhoto(photo)
   }
   if (!photo) return <div>Loading...</div>
   console.log(photo)
   return (
     <div className="photo-details">
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil enim
-        alias quam reiciendis et vero atque ipsa laudantium. Ipsam ad totam
-        earum. Voluptates neque atque, tempore aliquam nesciunt inventore
-        placeat.
-      </h1>
+      <h1>pore aliquam nesciunt inventore placeat.</h1>
     </div>
   )
 }
