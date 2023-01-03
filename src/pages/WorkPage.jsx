@@ -10,7 +10,6 @@ export const WorkPage = () => {
 
   const loadPhotos = async () => {
     const photos = await cloudinaryService.getPhotosByTag('work')
-    console.log(photos)
     setPhotos(photos)
   }
 
