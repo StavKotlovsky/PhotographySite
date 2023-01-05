@@ -18,7 +18,8 @@ const getPhotos = async () => {
   if (photosDb) return photosDb
 
   const res = await axios('cloudinary')
-  photosDb = res.data.map((photo) => ({
+  console.log('res.data', res.data)
+  photosDb = res.data.resources.map((photo) => ({
     id: photo.id,
     path: photo.path,
     name: photo.name,
@@ -27,8 +28,8 @@ const getPhotos = async () => {
 }
 
 const getPhotoById = async (id) => {
+  console.log('id service', id)
   const photos = await getPhotos()
-  console.log('photos service', photos)
   return photos.find((photo) => photo.id === id)
 }
 
