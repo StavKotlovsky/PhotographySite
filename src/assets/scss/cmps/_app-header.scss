@@ -9,46 +9,32 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        padding: 10px;
+        padding: 5px;
         border-bottom: solid 1px #400b5742;
 
         .header-logo {
             display: flex;
             flex: 1;
-            margin-left: 15px;
 
-            .flower {
-                width: 4em;
-                height: 3.5em;
-                background-image: url('../../img/lotus.png');
-                background-size: contain;
-                background-repeat: no-repeat;
+            img {
+                width: 17rem;
             }
         }
 
         a {
             cursor: pointer;
             text-decoration: none;
-            color: black;
-            padding: 3px;
-            font-size: 15px;
+            color: rgba(0, 0, 0, 0.699);
+            font-size: 16px;
             margin-inline-end: 40px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            letter-spacing: 2px;
+            letter-spacing: 7px;
 
             &:hover {
-                color: #3c1d4af6;
-                font-weight: 500;
-            }
-
-            &:active {
-                color: #3c1d4af6;
+                color: #3c1d4afb;
             }
         }
 
-        a:not(:last-of-type) {
-            margin-inline-end: 80px;
-        }
     }
 }
 

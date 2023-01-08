@@ -18,24 +18,25 @@ const getPhotos = async () => {
   if (photosDb) return photosDb
 
   const res = await axios('cloudinary')
-  console.log('res.data', res.data)
-  photosDb = res.data.resources.map((photo) => ({
+  console.log('res', res)
+  photosDb = res.data.map((photo) => ({
     id: photo.id,
     path: photo.path,
     name: photo.name,
   }))
+  console.log('photosDb', photosDb)
   return photosDb
 }
 
 const getPhotoById = async (id) => {
-  console.log('id service', id)
+  console.log('id', id)
   const photos = await getPhotos()
+  console.log('getPhotoById', photos)
   return photos.find((photo) => photo.id === id)
 }
 
 const getPhotosByTag = async (tagName) => {
   if (photoCache[tagName]) {
-    console.log('getting from cache')
     return photoCache[tagName]
   }
   try {

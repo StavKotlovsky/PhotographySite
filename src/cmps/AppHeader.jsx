@@ -1,15 +1,13 @@
 import { NavLink } from 'react-router-dom'
+import logoUrl from '../assets/logo/logo.jpeg'
 
 export function AppHeader() {
   return (
     <header className="app-header">
       <nav>
         <div className="header-logo">
-          <span className="flower"></span>
+          <img src={logoUrl} alt="logo" />
         </div>
-        <NavLink to="/family">משפחה</NavLink>
-        <NavLink to="/pregnency">הריון</NavLink>
-        <NavLink to="/business">עסקים</NavLink>
         <NavLink to="/">בית</NavLink>
       </nav>
     </header>

@@ -1,9 +1,10 @@
-import logoUrl from '../assets/logo/logo.jpeg'
-import img100 from '../assets/img/100.jpg'
+import iconUrl from '../assets/icon/plus.png'
 import img101 from '../assets/img/101.jpg'
 import img102 from '../assets/img/102.jpg'
 import img103 from '../assets/img/103.jpg'
+
 import ImageGallery from 'react-image-gallery'
+import { NavLink } from 'react-router-dom'
 
 export const HomePage = () => {
   const images = [
@@ -23,15 +24,28 @@ export const HomePage = () => {
 
   return (
     <section className="home-page flex">
-      <div className="home-img">
-        <img src={logoUrl} alt="logo" />
-      </div>
+      <span className="flower"></span>
 
       <div className="home-page-content">
         <ImageGallery items={images} />
+
         <div className="grid-home-page">
-          <img src={img100} alt="" />
-          <img src={img101} alt="" />
+          <NavLink to="/family">
+            <img className="navlink-img" src={img102} />
+            <span className="icon">משפחה +</span>
+          </NavLink>
+
+          <NavLink to="/business">
+            <img className="navlink-img" src={img103} />
+            <span className="icon">עסקים +</span>
+          </NavLink>
+
+          <NavLink className="pregnency-navlink" to="/pregnency">
+            <img className="navlink-img" src={img101} />
+            <span className="icon">
+              <h4>+ הריון</h4>
+            </span>
+          </NavLink>
         </div>
 
         <div className="about">

@@ -4,10 +4,10 @@
     text-align: center;
     flex-direction: column;
 
-    img {
-        width: 35%;
-        margin-top: 100px;
-    }
+    // .pregnency-navlink {
+    //     width: 500px;
+    //     margin-top: 60px;
+    // }
 }
 
 .home-page-content {
@@ -31,9 +31,7 @@
     margin-bottom: 5%;
     align-items: center;
     justify-content: center;
-    // border-radius: 10px;
     border-top: 1px solid rgba(81, 24, 109, 0.158);
-    // background: linear-gradient(#eecfc1df, #ffb290c9);
 
     span {
         width: 50%;
@@ -74,16 +72,58 @@
     display: none;
 }
 
-
-
 .grid-home-page {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 3rem;
-    margin: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    width: 100%;
+    margin-top: 70px;
+    grid-row-gap: 50px;
 
-    img {
-        width: 100%;
+    a {
+        position: relative;
+
+        img {
+            width: 80%;
+
+
+        }
+
+        .icon {
+            width: 90%;
+            text-align: center;
+            font-size: 30px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            color: white;
+            background-color: aqua;
+            top: 0;
+            bottom: 0;
+
+            h4 {
+                text-align: center;
+            }
+
+            // opacity: 0;
+
+            // filter: invert(98%) sepia(3%) saturate(1420%) hue-rotate(295deg) brightness(111%) contrast(65%);
+
+            &:hover {
+                opacity: 1;
+                transition: 1s;
+                // z-index: 1000 !important;
+            }
+        }
+
     }
 
+}
+
+.flower {
+    width: 4.4em;
+    height: 8.4em;
+    margin-top: 137px;
+    background-image: url('../../img/lotus.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }

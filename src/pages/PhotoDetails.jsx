@@ -21,8 +21,8 @@ export const PhotoDetails = () => {
   console.log('photo details', photo)
   return (
     <div className="photo-details">
-      <h1>pore aliquam nesciunt inventore placeat.</h1>
-      <img src={photo.id} alt="" />
+      <h1>photo details</h1>
+      <img className="details-img" src={params.id} alt="photoId" />
     </div>
   )
 }
