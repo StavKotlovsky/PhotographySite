@@ -1,4 +1,3 @@
-import iconUrl from '../assets/icon/plus.png'
 import img101 from '../assets/img/101.jpg'
 import img102 from '../assets/img/102.jpg'
 import img103 from '../assets/img/103.jpg'
@@ -20,6 +19,10 @@ export const HomePage = () => {
       original:
         'https://res.cloudinary.com/stavk22/image/upload/v1672231360/family/IMG_4606_hlk3cq.jpg',
     },
+    {
+      original:
+        'https://res.cloudinary.com/stavk22/image/upload/v1672747412/work/IMG_5184_spi3ea.jpg',
+    },
   ]
 
   return (
@@ -31,20 +34,18 @@ export const HomePage = () => {
 
         <div className="grid-home-page">
           <NavLink to="/family">
-            <img className="navlink-img" src={img102} />
-            <span className="icon">משפחה +</span>
+            <img className="navlink-img" src={img102} alt="family" />
+            <span className="icon">משפחה</span>
           </NavLink>
 
           <NavLink to="/business">
-            <img className="navlink-img" src={img103} />
-            <span className="icon">עסקים +</span>
+            <img className="navlink-img" src={img103} alt="business" />
+            <span className="icon">עסקים</span>
           </NavLink>
 
           <NavLink className="pregnency-navlink" to="/pregnency">
-            <img className="navlink-img" src={img101} />
-            <span className="icon">
-              <h4>+ הריון</h4>
-            </span>
+            <img className="navlink-img" src={img101} alt="pregnency" />
+            <span className="icon">הריון</span>
           </NavLink>
         </div>
 

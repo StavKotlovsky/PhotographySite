@@ -8,26 +8,20 @@
 
 
 // Basics
-@import "basics/typography";
 @import "basics/base";
 @import "basics/helpers";
-@import "basics/layout";
 @import "basics/modals";
 @import "basics/animations";
 
 // Pages
 @import "pages/main-app";
 @import "pages/home-page";
-// @import "pages/contact-page";
 @import "pages/photo-details";
-// @import "pages/contact-edit";
-// @import "pages/statistic-page";
 
 // Components
 @import "cmps/app-header";
 @import "cmps/photo-preview";
 @import "cmps/photo-list";
-// @import "cmps/contact-filter";
 
 .details-img {
     height: 300px;

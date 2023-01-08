@@ -9,30 +9,11 @@ const cld = new Cloudinary({
   },
 })
 
-let photosDb = []
-
 const PHOTO_KEY = 'photoDB'
 const photoCache = storageService.load(PHOTO_KEY) || {}
 
-const getPhotos = async () => {
-  if (photosDb) return photosDb
-
-  const res = await axios('cloudinary')
-  console.log('res', res)
-  photosDb = res.data.map((photo) => ({
-    id: photo.id,
-    path: photo.path,
-    name: photo.name,
-  }))
-  console.log('photosDb', photosDb)
-  return photosDb
-}
-
 const getPhotoById = async (id) => {
   console.log('id', id)
-  const photos = await getPhotos()
-  console.log('getPhotoById', photos)
-  return photos.find((photo) => photo.id === id)
 }
 
 const getPhotosByTag = async (tagName) => {
@@ -48,6 +29,7 @@ const getPhotosByTag = async (tagName) => {
       path: r.public_id,
       description: r.context?.custom.alt,
       price: r.context?.custom.caption,
+      name: tagName,
     }))
     storageService.save(PHOTO_KEY, photoCache)
     return res.data.resources.map((r) => ({
@@ -55,6 +37,7 @@ const getPhotosByTag = async (tagName) => {
       path: r.public_id,
       description: r.context?.custom.alt,
       price: r.context?.custom.caption,
+      name: tagName,
     }))
   } catch (e) {
     console.error('cant get photos from cache', e)
