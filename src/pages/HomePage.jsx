@@ -13,7 +13,15 @@ export const HomePage = () => {
     },
     {
       original:
+        'https://res.cloudinary.com/stavk22/image/upload/v1673264458/nature/IMG_7321_con1qy.jpg',
+    },
+    {
+      original:
         'https://res.cloudinary.com/stavk22/image/upload/v1672231595/work/IMG_8791_bcuif9.jpg',
+    },
+    {
+      original:
+        'https://res.cloudinary.com/stavk22/image/upload/v1673264458/nature/IMG_7286_tu1igp.jpg',
     },
     {
       original:
