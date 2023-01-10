@@ -15,6 +15,7 @@ export const FamilyPage = () => {
   if (!photos) return <div>loading...</div>
   return (
     <section>
+      <h4 className="title-list">צילומי משפחה</h4>
       <PhotoList photos={photos} />
     </section>
   )

@@ -5,13 +5,7 @@ import { cloudinaryService } from '../services/cloudinary.service'
 export function PhotoList({ photos }) {
   return (
     <React.Fragment>
-      <div className="photo-list-title">
-        <h4>
-          {photos.map((photo) => {
-            console.log(photo)
-          })}
-        </h4>
-      </div>
+      <div className="photo-list-title"></div>
       <ul className="photo-list">
         <li className="clean-list">
           {photos.map((photo) => {

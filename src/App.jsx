@@ -4,7 +4,6 @@ import { AppHeader } from './cmps/AppHeader'
 import { HomePage } from './pages/HomePage'
 import { FamilyPage } from './pages/FamilyPage'
 import { PregnancyPage } from './pages/PregnancyPage'
-import { PortraitPage } from './pages/PortraitPage'
 import { BusinessPage } from './pages/BusinessPage'
 import { PhotoDetails } from './pages/PhotoDetails'
 
@@ -21,7 +20,6 @@ function App() {
           <Route path="/family" element={<FamilyPage />} />
           <Route path="/pregnency" element={<PregnancyPage />} />
           <Route path="/business" element={<BusinessPage />} />
-          <Route path="/portrait" element={<PortraitPage />} />
         </Routes>
       </section>
     </Router>
