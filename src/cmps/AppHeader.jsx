@@ -10,7 +10,7 @@ export function AppHeader() {
             <img src={logoUrl} alt="logo" />
           </NavLink>
         </div>
-        <NavLink to="/">צור קשר</NavLink>
+        {/* <NavLink to="/">צור קשר</NavLink> */}
         <NavLink to="/">בית</NavLink>
       </nav>
     </header>

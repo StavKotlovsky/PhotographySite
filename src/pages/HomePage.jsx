@@ -79,7 +79,20 @@ export const HomePage = () => {
             </h2>
           </span>
         </div>
+        <div className="whatsupp">
+          <a
+            href="https://wa.me/9720526869158?text="
+            target="_blank"
+            rel="noreferrer"
+          >
+            {' '}
+            שלחו לי וואטסאפ
+          </a>
+          {/* <button>X</button> */}
+        </div>
       </div>
+
+      {/* <footer></footer> */}
     </section>
   )
 }
