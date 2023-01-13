@@ -1,0 +1,62 @@
+.app-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+    background-color: white;
+    height: $app-header-height;
+    overflow: hidden;
+
+    .flower {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 180%;
+        transition: all 0.13s ease-in-out;
+
+        &.show {
+            top: 50%;
+        }
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        border-bottom: solid 1px #400b5742;
+
+        .header-logo {
+            display: flex;
+            flex: 1;
+
+            img {
+                width: 17rem;
+            }
+        }
+
+        a {
+            cursor: pointer;
+            text-decoration: none;
+            color: #382a3a;
+            font-size: 16px;
+            margin-inline-end: 26px;
+            font-weight: 600;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 4px;
+
+            &:hover {
+                color: #550e76fb;
+            }
+        }
+
+    }
+}
+
+// @media screen and (max-width:500px) {
+//     .app-header {
+//         nav {
+//             background-color: aqua;
+//             flex-direction: column;
+//         }
+//     }
+// }

@@ -1,0 +1,15 @@
+.photo-list {
+    li {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 45px;
+    }
+
+    .photo-preview {
+        &:hover {
+            filter: brightness(95%);
+            cursor: pointer;
+        }
+    }
+}

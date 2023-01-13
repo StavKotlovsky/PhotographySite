@@ -1,0 +1,163 @@
+.home-page {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding-top: calc($app-header-height + 33px);
+
+}
+
+.home-page-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    h1 {
+        padding: 10px;
+        font-weight: 600;
+    }
+}
+
+.about {
+    display: flex;
+    gap: 40px;
+    margin-top: 5%;
+    flex-wrap: wrap;
+    padding: 50px;
+    margin-bottom: 4%;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(81, 24, 109, 0.158);
+
+    span {
+        width: 50%;
+        line-height: 25px;
+        font-family: 'Segoe UI';
+
+        h1,
+        h2 {
+            font-size: initial;
+        }
+    }
+
+    .about-image {
+        background-image: url('../../img/roni-image.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+
+
+    }
+}
+
+.image-gallery-image {
+    max-height: calc(90vh - 80px) !important;
+    margin: 0 !important;
+    padding: 10px;
+
+}
+
+.image-gallery-svg {
+    height: 70px !important;
+}
+
+
+.image-gallery-fullscreen-button,
+.image-gallery-play-button {
+    display: none;
+}
+
+.grid-home-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+    margin-top: 80px;
+    grid-row-gap: 50px;
+
+    a {
+        position: relative;
+
+        img {
+            width: 80%;
+
+
+        }
+
+        .icon {
+            width: 100%;
+            text-align: center;
+            font-size: 35px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            justify-content: center;
+            font-weight: 600;
+            opacity: 0;
+
+            &:hover {
+                opacity: 1;
+                transition: 0.5s;
+                background-color: rgba(255, 255, 255, 0.144);
+            }
+        }
+
+    }
+
+}
+
+.flower {
+    width: 4.4em;
+    height: 4.4em;
+    background-image: url('../../img/lotus.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.whatsupp {
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    background: rgba(224, 254, 182, 0.699);
+    padding: 10px;
+    border-radius: 10px;
+
+    a {
+        color: black;
+        font-size: 15px;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+    button {
+        border: none;
+        position: absolute;
+        font-size: 12px;
+        top: 1px;
+        right: 1px;
+        cursor: pointer;
+        background-color: transparent;
+
+    }
+}
+
+footer {
+    background: linear-gradient(0.25turn, #a967e06a, #e9cadc, #c9556378);
+    padding: 20px;
+    border-top: 1px black solid;
+    width: 100%;
+}
