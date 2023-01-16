@@ -124,40 +124,11 @@
     background-repeat: no-repeat;
 }
 
-.whatsupp {
+.whatsapp {
     position: fixed;
     left: 0;
     bottom: 10px;
     background: rgba(224, 254, 182, 0.699);
     padding: 10px;
     border-radius: 10px;
-
-    a {
-        color: black;
-        font-size: 15px;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
-
-    }
-
-    button {
-        border: none;
-        position: absolute;
-        font-size: 12px;
-        top: 1px;
-        right: 1px;
-        cursor: pointer;
-        background-color: transparent;
-
-    }
-}
-
-footer {
-    background: linear-gradient(0.25turn, #a967e06a, #e9cadc, #c9556378);
-    padding: 20px;
-    border-top: 1px black solid;
-    width: 100%;
 }

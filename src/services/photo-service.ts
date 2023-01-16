@@ -55,7 +55,7 @@ export const photoService = {
     },
     {
       original:
-        'https://res.cloudinary.com/stavk22/image/upload/v1673264458/nature/IMG_7321_con1qy.jpg',
+        'https://res.cloudinary.com/stavk22/image/upload/v1672747328/work/IMG_6260_ppb1ou.jpg',
     },
     {
       original:
@@ -63,15 +63,16 @@ export const photoService = {
     },
     {
       original:
-        'https://res.cloudinary.com/stavk22/image/upload/v1673264458/nature/IMG_7286_tu1igp.jpg',
+        'https://res.cloudinary.com/stavk22/image/upload/v1673264458/nature/IMG_7321_con1qy.jpg',
+    },
+
+    {
+      original:
+        'https://res.cloudinary.com/stavk22/image/upload/v1673264458/nature/IMG_7303_rtclwy.jpg',
     },
     {
       original:
         'https://res.cloudinary.com/stavk22/image/upload/v1672231360/family/IMG_4606_hlk3cq.jpg',
-    },
-    {
-      original:
-        'https://res.cloudinary.com/stavk22/image/upload/v1672747412/work/IMG_5184_spi3ea.jpg',
     },
   ],
 }

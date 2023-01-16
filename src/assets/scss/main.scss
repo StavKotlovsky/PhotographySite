@@ -22,8 +22,5 @@
 @import "cmps/app-header";
 @import "cmps/photo-preview";
 @import "cmps/photo-list";
-
-.details-img {
-    height: 300px;
-    width: 400px;
-}
+@import "cmps/footer";
+@import "cmps/loading";

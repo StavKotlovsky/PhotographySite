@@ -3,6 +3,8 @@ import { PhotoList } from '../cmps/PhotoList'
 import { useFetchEffect } from '../hooks/useFetchEffect'
 import { Photo, photoService } from '../services/photo-service'
 
+import loading from '../assets/icon/loading.gif'
+
 export const FamilyPage = () => {
   const [photos, setPhotos] = useState<Photo[]>([])
 
@@ -16,7 +18,12 @@ export const FamilyPage = () => {
     loadPhotos()
   }, [loadPhotos])
 
-  if (!photos) return <div>loading...</div>
+  if (!photos)
+    return (
+      <div className="loading">
+        <img src={loading} alt="" />
+      </div>
+    )
   return (
     <section className="page-container">
       <h4 className="title-list">צילומי משפחה</h4>

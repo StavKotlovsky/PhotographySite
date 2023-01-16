@@ -1,10 +1,12 @@
 import img101 from '../assets/img/101.jpg'
 import img102 from '../assets/img/102.jpg'
 import img103 from '../assets/img/103.jpg'
+import whatsapp from '../assets/icon/whatsapp.png'
 
 import ImageGallery from 'react-image-gallery'
 import { NavLink } from 'react-router-dom'
 import { photoService } from '../services/photo-service'
+
 export const HomePage = () => {
   return (
     <section className="home-page flex">
@@ -14,7 +16,7 @@ export const HomePage = () => {
         <ImageGallery
           items={photoService.carouselPhotos}
           autoPlay
-          slideInterval={2500}
+          slideInterval={3000}
         />
 
         <div className="grid-home-page">
@@ -56,20 +58,16 @@ export const HomePage = () => {
             </h2>
           </span>
         </div>
-        <div className="whatsupp">
+        <div className="whatsapp">
           <a
             href="https://wa.me/9720526869158?text="
             target="_blank"
             rel="noreferrer"
           >
-            {' '}
-            שלחו לי וואטסאפ
+            <img src={whatsapp} alt="" />
           </a>
-          {/* <button>X</button> */}
         </div>
       </div>
-
-      {/* <footer></footer> */}
     </section>
   )
 }

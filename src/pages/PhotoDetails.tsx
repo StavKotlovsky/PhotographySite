@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { PhotoPreview } from '../cmps/PhotoPreview'
 import { useFetchEffect } from '../hooks/useFetchEffect'
 import { Photo, photoService } from '../services/photo-service'
+import loading from '../assets/icon/loading.gif'
 
 export const PhotoDetails = () => {
   const [photo, setPhoto] = useState<Photo>()
@@ -15,14 +16,25 @@ export const PhotoDetails = () => {
   async function loadPhotos() {
     const photoId = params.id as string
     const photo = await photoService.getPhotoById(photoId)
-    console.log('photo details', photo)
     setPhoto(photo)
   }
-  if (!photo) return <div>Loading...</div>
+
+  // const onBack = () => {
+  //   navigate()
+  // }
+
+  if (!photo)
+    return (
+      <div className="loading">
+        <img src={loading} alt="" />
+      </div>
+    )
   return (
-    <div className="photo-details">
-      <h1>photo details</h1>
-      <PhotoPreview path={photo.path} />
-    </div>
+    <section className="photo-details-container">
+      {/* <button onClick={() => onBack()}>back</button> */}
+      <div className="photo-details">
+        <PhotoPreview path={photo.path} />
+      </div>
+    </section>
   )
 }
