@@ -1,17 +1,18 @@
 import img101 from '../assets/img/101.jpg'
 import img102 from '../assets/img/102.jpg'
 import img103 from '../assets/img/103.jpg'
-import whatsapp from '../assets/icon/whatsapp.png'
 
 import ImageGallery from 'react-image-gallery'
 import { NavLink } from 'react-router-dom'
 import { photoService } from '../services/photo-service'
+import { About } from '../cmps/About'
+import { SocialMedia } from '../cmps/SocialMedia'
 
 export const HomePage = () => {
   return (
     <section className="home-page flex">
       <span className="flower"></span>
-
+      <SocialMedia />
       <div className="home-page-content">
         <ImageGallery
           items={photoService.carouselPhotos}
@@ -35,38 +36,7 @@ export const HomePage = () => {
             <span className="icon">הריון</span>
           </NavLink>
         </div>
-
-        <div className="about">
-          <span className="about-image"></span>
-          <span className="cotent">
-            <h2>
-              ,ברוכים הבאים לעולם הצילום שלי
-              <br />
-              .קוראים לי רוני שי ואחת התרפיות שלי היא לתעד במצלמה שלי <br />
-              תיעוד מבחנתי זו סוג של מילה נרדפת למזכרת , כשאני מתעדת אני רואה
-              דרך המצלמה רגעים של אושר המתבטא במגוון דרכים הסיבה העיקרית שעוזרת
-              לאושר להתבטא בתמונה היא הרגשת נינוחות ורוגע שהצד השני המצולם מרגיש
-              וכך, ברגע שמעלים זיכרונות ומסתכלים על התמונה נרגיש בתוכנו את אותו
-              הרגש וכך החיוך יעלה או הבכי, זו הסיבה שאני כל כך אוהבת לתעד ,להיות
-              שם ולהנציח את הרגע גורם לי לסיפוק נפשי שזה מדהים! אז חברים יקרים
-              אני כאן בשבילכם ואעזור לכם בדרך מקצועית לתעד את החוויות המשפחתיות
-              שלכם כמו אירועים משפחתיים או עסקיים, צילומי הריון, צילומי תדמית
-              לעסק וצילומי בת\בר מצווה
-              <br />
-              אני מבטיחה לכם שהצילומים איתי הכי קלילים וזורמים ואפילו חוויה לכל
-              החיים
-            </h2>
-          </span>
-        </div>
-        <div className="whatsapp">
-          <a
-            href="https://wa.me/9720526869158?text="
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={whatsapp} alt="" />
-          </a>
-        </div>
+        <About />
       </div>
     </section>
   )

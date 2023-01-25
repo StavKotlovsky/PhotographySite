@@ -1,0 +1,31 @@
+.social-media {
+    a {
+        display: contents;
+        font-size: 5px;
+    }
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+
+    img {
+        width: 37px;
+        margin: 20px;
+        transition: transform 0.2s ease-in-out;
+
+
+    }
+
+    .facebook:hover {
+        transform: scale(1.1);
+    }
+
+    .instagram:hover {
+        transform: scale(1.1);
+    }
+
+    .whatsapp:hover {
+        transform: scale(1.1);
+    }
+}

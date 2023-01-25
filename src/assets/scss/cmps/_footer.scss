@@ -1,8 +1,22 @@
 footer {
-    background: linear-gradient(0.25turn, #a967e028, #e9cadc91, #c9556352);
-    padding: 5px;
-    border-top: 1px rgba(0, 0, 0, 0.235) solid;
+    background: rgba(192, 135, 217, 0.176);
+    padding: 10px;
     width: 100%;
-    text-align: end;
+    display: flex;
+    text-align: center;
     font-size: 10px;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        margin-left: 42%;
+        font-size: 20px;
+        color: #7c7c7c;
+    }
+
+    // img {
+    //     width: 17%;
+    //     margin-left: 45%;
+    // }
+
 }

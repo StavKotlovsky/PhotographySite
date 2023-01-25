@@ -1,10 +1,14 @@
-.loading {
+.loader {
     display: flex;
+    /* padding: 120px 40px 20px; */
     justify-content: center;
     align-items: center;
-    text-align: center;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+
+    img {
+        width: 40%;
+    }
+
 
 
 }

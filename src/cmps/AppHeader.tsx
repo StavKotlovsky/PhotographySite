@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import logoUrl from '../assets/logo/logo.png'
+import { SocialMedia } from './SocialMedia'
+// import ContactModal from './ContactModal'
 
 export function AppHeader() {
   const [showFlower, setShowFlower] = useState(false)
@@ -29,7 +31,9 @@ export function AppHeader() {
           </NavLink>
         </div>
         <span className={`flower ${showFlower ? 'show' : ''}`}></span>
-        {/* <NavLink to="/">צור קשר</NavLink> */}
+        {/* <button>צור קשר</button> */}
+        {/* <ContactModal /> */}
+        {/* <SocialMedia /> */}
         <NavLink to="/">בית</NavLink>
       </nav>
     </header>

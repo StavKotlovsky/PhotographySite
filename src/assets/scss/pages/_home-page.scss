@@ -5,6 +5,22 @@
     flex-direction: column;
     padding-top: calc($app-header-height + 33px);
 
+    // .whatsapp {
+   //     position: fixed;
+   //     left: 0;
+   //     bottom: 0;
+   //     padding: 10px;
+   //     border-radius: 10px;
+   //     width: 60px;
+   //     transition: transform 0.2s ease-in-out;
+   //     cursor: pointer;
+
+   //     &:hover {
+   //         transform: scale(1.1);
+
+   //     }
+   // }
+
 }
 
 .home-page-content {
@@ -122,13 +138,4 @@
     background-image: url('../../img/lotus.png');
     background-size: contain;
     background-repeat: no-repeat;
-}
-
-.whatsapp {
-    position: fixed;
-    left: 0;
-    bottom: 10px;
-    background: rgba(224, 254, 182, 0.699);
-    padding: 10px;
-    border-radius: 10px;
 }
