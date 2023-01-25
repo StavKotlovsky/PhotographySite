@@ -4,23 +4,6 @@
     text-align: center;
     flex-direction: column;
     padding-top: calc($app-header-height + 33px);
-
-    // .whatsapp {
-   //     position: fixed;
-   //     left: 0;
-   //     bottom: 0;
-   //     padding: 10px;
-   //     border-radius: 10px;
-   //     width: 60px;
-   //     transition: transform 0.2s ease-in-out;
-   //     cursor: pointer;
-
-   //     &:hover {
-   //         transform: scale(1.1);
-
-   //     }
-   // }
-
 }
 
 .home-page-content {
@@ -66,16 +49,13 @@
         width: 300px;
         height: 300px;
         border-radius: 100%;
-
-
     }
 }
 
 .image-gallery-image {
     max-height: calc(90vh - 80px) !important;
     margin: 0 !important;
-    padding: 10px;
-
+    padding: 15px;
 }
 
 .image-gallery-svg {
