@@ -19,7 +19,7 @@ export const HomePage = () => {
         <ImageGallery
           items={photoService.carouselPhotos}
           autoPlay
-          slideInterval={3000}
+          slideInterval={3200}
         />
 
         <div className="grid-home-page">
