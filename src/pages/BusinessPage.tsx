@@ -3,7 +3,6 @@ import { PhotoList } from '../cmps/PhotoList'
 import { useFetchEffect } from '../hooks/useFetchEffect'
 import { Photo, photoService } from '../services/photo-service'
 
-import loading from '../assets/icon/loading.gif'
 import { Loader } from '../cmps/Loader'
 
 export const BusinessPage = () => {

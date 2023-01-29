@@ -4,7 +4,6 @@ import { useState } from 'react'
 import { PhotoList } from '../cmps/PhotoList.jsx'
 import { useFetchEffect } from '../hooks/useFetchEffect'
 
-import loading from '../assets/icon/loading.gif'
 import { Loader } from '../cmps/Loader'
 
 export const PregnancyPage = () => {
