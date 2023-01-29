@@ -14,18 +14,9 @@
         margin: 12px;
         transition: transform 0.2s ease-in-out;
 
+        &:hover {
+            transform: scale(1.1);
+        }
 
-    }
-
-    .facebook:hover {
-        transform: scale(1.1);
-    }
-
-    .instagram:hover {
-        transform: scale(1.1);
-    }
-
-    .whatsapp:hover {
-        transform: scale(1.1);
     }
 }

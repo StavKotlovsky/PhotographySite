@@ -7,11 +7,13 @@ import { NavLink } from 'react-router-dom'
 import { photoService } from '../services/photo-service'
 import { About } from '../cmps/About'
 import { SocialMedia } from '../cmps/SocialMedia'
+import ContactModal from '../cmps/ContactModal'
 
 export const HomePage = () => {
   return (
     <section className="home-page flex">
       <span className="flower"></span>
+      <ContactModal />
       <SocialMedia />
       <div className="home-page-content">
         <ImageGallery

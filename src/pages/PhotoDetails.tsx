@@ -4,6 +4,7 @@ import { PhotoPreview } from '../cmps/PhotoPreview'
 import { useFetchEffect } from '../hooks/useFetchEffect'
 import { Photo, photoService } from '../services/photo-service'
 import loading from '../assets/icon/loading.gif'
+import { Loader } from '../cmps/Loader'
 
 export const PhotoDetails = () => {
   const [photo, setPhoto] = useState<Photo>()
@@ -23,12 +24,7 @@ export const PhotoDetails = () => {
   //   navigate()
   // }
 
-  if (!photo)
-    return (
-      <div className="loading">
-        <img src={loading} alt="" />
-      </div>
-    )
+  if (!photo) return <Loader />
   return (
     <section className="photo-details-container">
       {/* <button onClick={() => onBack()}>back</button> */}

@@ -18,7 +18,7 @@ export const BusinessPage = () => {
     loadPhotos()
   }, [loadPhotos])
 
-  if (!photos) return <Loader />
+  if (!photos.length) return <Loader />
   return (
     <section className="page-container">
       <h4 className="title-list">צילומי עסקים</h4>
