@@ -13,7 +13,6 @@ export const HomePage = () => {
   return (
     <section className="home-page flex">
       <span className="flower"></span>
-      <ContactModal />
       <SocialMedia />
       <div className="home-page-content">
         <ImageGallery

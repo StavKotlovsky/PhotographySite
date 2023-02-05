@@ -19,14 +19,10 @@ export const PhotoDetails = () => {
     setPhoto(photo)
   }
 
-  // const onBack = () => {
-  //   navigate()
-  // }
-
   if (!photo) return <Loader />
   return (
     <section className="photo-details-container">
-      {/* <button onClick={() => onBack()}>back</button> */}
+      <button onClick={() => window.history.back()}>חזור</button>
       <div className="photo-details">
         <PhotoPreview path={photo.path} />
       </div>

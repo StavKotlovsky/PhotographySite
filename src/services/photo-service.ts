@@ -36,6 +36,20 @@ const initPhotoDb = async () => {
   }
 }
 
+// const getPhotoIdxById = async (id: string) => {
+//   if (!photoDb.length) {
+//     console.log('photodb', photoDb)
+//     await initPhotoDb()
+//   }
+//   return photoDb.findIndex((photo) => photo.path === id)
+// }
+
+// const getNextPhoto = async (currPhotoId: string, diff: any) => {
+//   const currIdx = getPhotoIdxById(currPhotoId)
+//   const nextIdx = (currIdx + diff + photoDb.length) % photoDb.length
+//   return photoDb[nextIdx].path
+// }
+
 const getPhotosByTag = async (tagName: string) => {
   if (!photoDb.length) {
     await initPhotoDb()

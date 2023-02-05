@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import logoUrl from '../assets/logo/logo.png'
+import { ContactModal } from '../cmps/ContactModal'
 
 export function AppHeader() {
   const [showFlower, setShowFlower] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     const onScroll = (ev: Event) => {
