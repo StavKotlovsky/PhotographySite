@@ -20,7 +20,11 @@ export const BusinessPage = () => {
   if (!photos.length) return <Loader />
   return (
     <section className="page-container">
-      <h4 className="title-list">צילומי עסקים</h4>
+      <h4 className="title-list"> צילומי עסקים ותדמית</h4>
+      <p>
+        כיום בעזרת המדיה אנחנו חושפים את עצמנו לעולם בשלל דרכים אז למה שלא
+        תשקיעו בעצמכם קצת יותר בתמונת תדמית או תמונות לעסק
+      </p>
       <PhotoList photos={photos} />
     </section>
   )

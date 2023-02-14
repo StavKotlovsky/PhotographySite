@@ -1,0 +1,29 @@
+.form-container {
+    padding: 60px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    border-top: 1px solid rgba(81, 24, 109, 0.158);
+
+
+    form {
+        gap: 20px;
+        align-items: flex-end;
+
+        h1 {
+            font-weight: 400;
+        }
+
+        input,
+        textarea {
+            text-align: end;
+            padding: 10px;
+            color: #363636;
+            resize: none;
+            width: 31em;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+    }
+
+}

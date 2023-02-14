@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import logoUrl from '../assets/logo/logo.png'
-import { ContactModal } from '../cmps/ContactModal'
+// import { useHistory } from 'react-router-dom';
 
 export function AppHeader() {
   const [showFlower, setShowFlower] = useState(false)
-  const [isOpen, setIsOpen] = useState(false)
+  // const history = useHistory()
 
   useEffect(() => {
     const onScroll = (ev: Event) => {
@@ -33,6 +33,7 @@ export function AppHeader() {
         <span className={`flower ${showFlower ? 'show' : ''}`}></span>
         <NavLink to="/">בית</NavLink>
       </nav>
+      <div></div>
     </header>
   )
 }

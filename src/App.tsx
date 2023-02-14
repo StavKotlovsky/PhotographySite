@@ -5,8 +5,9 @@ import { FamilyPage } from './pages/FamilyPage'
 import { HomePage } from './pages/HomePage'
 import { PhotoDetails } from './pages/PhotoDetails'
 import { PregnancyPage } from './pages/PregnancyPage'
-import './assets/scss/main.scss'
 import { Footer } from './cmps/Footer'
+
+import './assets/scss/main.scss'
 
 function App() {
   return (

@@ -1,0 +1,12 @@
+.page-questions {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    align-items: flex-end;
+
+    span {
+        padding: 8px;
+
+        .show {}
+    }
+}

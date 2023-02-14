@@ -20,7 +20,11 @@ export const FamilyPage = () => {
   if (!photos.length) return <Loader />
   return (
     <section className="page-container">
-      <h4 className="title-list">צילומי משפחה</h4>
+      <h4 className="title-list">צילומי משפחה - חוויה ואיחוד משפחתי</h4>
+      <p>
+        צילומי משפחה זה לא רק מזכרת אותנטית מקצועית ואיכותית של היקרים לנו מכל
+        זו גם חוויה נפלאה ומאחדת לכל המשפחה
+      </p>
       <PhotoList photos={photos} />
     </section>
   )

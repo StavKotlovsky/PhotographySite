@@ -4,14 +4,30 @@
 
 .page-container {
     padding: calc($app-header-height + 33px) 40px 20px;
+
+    .title-list {
+        font-size: 2.2em;
+        color: #111111a3;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.1em;
+        color: #111111ee;
+        font-weight: 100;
+        text-align: center;
+        margin: 20px;
+
+    }
 }
 
-.title-list {
-    font-size: 2.2em;
-    color: #111111a3;
-    font-weight: 100;
-    text-align: center;
+.underline {
+    text-decoration: underline;
+    padding: 5px;
 }
+
 
 // // List
 .clean-list {

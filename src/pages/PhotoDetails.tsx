@@ -4,6 +4,7 @@ import { PhotoPreview } from '../cmps/PhotoPreview'
 import { useFetchEffect } from '../hooks/useFetchEffect'
 import { Photo, photoService } from '../services/photo-service'
 import { Loader } from '../cmps/Loader'
+// import NextButton from '../cmps/NextButton'
 
 export const PhotoDetails = () => {
   const [photo, setPhoto] = useState<Photo>()
@@ -25,6 +26,7 @@ export const PhotoDetails = () => {
       <button onClick={() => window.history.back()}>חזור</button>
       <div className="photo-details">
         <PhotoPreview path={photo.path} />
+        {/* <NextButton photo={photo} /> */}
       </div>
     </section>
   )

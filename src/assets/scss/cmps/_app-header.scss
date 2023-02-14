@@ -37,16 +37,17 @@
         a {
             cursor: pointer;
             text-decoration: none;
-            color: #382a3a;
+            color: #000000;
             font-size: 16px;
             margin-inline-end: 26px;
-            margin-inline-start: 26px;
-            font-weight: 600;
+            margin-inline-start: 4px;
+            font-weight: 400;
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            letter-spacing: 4px;
+            letter-spacing: 2px;
+            transition: 0.3s;
 
             &:hover {
-                color: #550e76fb;
+                color: #c2286d;
             }
         }
 
