@@ -33,7 +33,6 @@ export function AppHeader() {
         <span className={`flower ${showFlower ? 'show' : ''}`}></span>
         <NavLink to="/">בית</NavLink>
       </nav>
-      <div></div>
     </header>
   )
 }

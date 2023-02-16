@@ -36,19 +36,16 @@ const initPhotoDb = async () => {
   }
 }
 
-// const getPhotoIdxById = async (id: string) => {
-//   if (!photoDb.length) {
-//     console.log('photodb', photoDb)
-//     await initPhotoDb()
-//   }
-//   return photoDb.findIndex((photo) => photo.path === id)
-// }
-
-// const getNextPhoto = async (currPhotoId: string, diff: any) => {
-//   const currIdx = getPhotoIdxById(currPhotoId)
-//   const nextIdx = (currIdx + diff + photoDb.length) % photoDb.length
-//   return photoDb[nextIdx].path
-// }
+const getNextPhotoId = async (
+  currPhotoId: string,
+  currTagName: string,
+  diff: number
+) => {
+  const photos = await getPhotosByTag(currTagName)
+  const currIdx = photos.findIndex((photo) => photo.id === currPhotoId)
+  const nextIdx = (currIdx + diff + photos.length) % photos.length
+  return photos[nextIdx].id
+}
 
 const getPhotosByTag = async (tagName: string) => {
   if (!photoDb.length) {
@@ -61,6 +58,7 @@ const getPhotosByTag = async (tagName: string) => {
 export const photoService = {
   getPhotosByTag,
   getPhotoById,
+  getNextPhotoId,
   cld,
   carouselPhotos: [
     {
@@ -83,10 +81,6 @@ export const photoService = {
     {
       original:
         'https://res.cloudinary.com/stavk22/image/upload/v1673264458/nature/IMG_7303_rtclwy.jpg',
-    },
-    {
-      original:
-        'https://res.cloudinary.com/stavk22/image/upload/v1676202656/family/IMG_9430_cf5y30.jpg',
     },
   ],
 }
