@@ -19,9 +19,20 @@ export const PhotoDetails = () => {
     const photoId = params.id as string
     const photo = await photoService.getPhotoById(photoId)
     setPhoto(photo)
+    console.log(photo)
   }
 
-  async function onNextClick() {}
+  async function onNextClick(diff: number) {
+    const nextPhotoId = await photoService.getNextPhotoId(
+      params.id as string,
+      photo?.tagName || '',
+      diff
+    )
+    if (nextPhotoId) {
+      navigate(`/photos/${nextPhotoId}`)
+    }
+    setPhoto(photo)
+  }
 
   if (!photo) return <Loader />
   return (
@@ -29,8 +40,10 @@ export const PhotoDetails = () => {
       <button onClick={() => window.history.back()}>חזור</button>
       <div className="photo-details">
         <PhotoPreview path={photo.path} />
-        <button></button>
-        {/* <NextButton photo={photo} /> */}
+      </div>
+      <div className="photo-navigation">
+        <button onClick={() => onNextClick(-1)}>הקודם</button>
+        <button onClick={() => onNextClick(1)}>הבא</button>
       </div>
     </section>
   )
