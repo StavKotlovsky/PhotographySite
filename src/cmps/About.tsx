@@ -1,11 +1,11 @@
+import roniPhoto from '../assets/img/roni-image.jpeg'
+
 export function About() {
   return (
     <div className="about">
-      <span className="about-image"></span>
+      <h1 className="about-title">ברוכים הבאים לעולם הצילום שלי</h1>
       <span className="cotent">
         <h2>
-          ,ברוכים הבאים לעולם הצילום שלי
-          <br />
           .קוראים לי רוני שי ואחת התרפיות שלי היא לתעד במצלמה שלי <br />
           תיעוד מבחנתי זו סוג של מילה נרדפת למזכרת , כשאני מתעדת אני רואה דרך
           המצלמה רגעים של אושר המתבטא במגוון דרכים הסיבה העיקרית שעוזרת לאושר
@@ -18,6 +18,7 @@ export function About() {
           <br />
           אני מבטיחה לכם שהצילומים איתי הכי קלילים זורמים ואפילו חוויה לכל החיים
         </h2>
+        <img className="about-image" src={roniPhoto} alt="" />
       </span>
     </div>
   )

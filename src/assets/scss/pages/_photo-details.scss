@@ -1,33 +1,65 @@
 .photo-details-container {
-    height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-top: 6%;
+    align-items: flex-start;
     flex-direction: column;
 
-    button {
-        padding-top: 26px;
+    .back-button {
+        background: transparent;
         border: none;
-        background: none;
-        cursor: pointer;
-        align-self: flex-start;
-        font-size: 19px;
-        margin-left: 12%;
-        color: #606060;
+        color: rgb(59, 59, 59);
+        font-size: 20px;
+        margin: 10px;
 
         &:hover {
             text-decoration: underline;
-            color: rgb(20, 20, 20);
+            cursor: pointer;
         }
-
     }
 
     .photo-details {
-        display: flex;
-        width: 59rem;
-        padding: 10px;
+        position: relative;
+
+        .left {
+            left: 0;
+            position: absolute;
+            height: 100%;
+            top: 0;
+            background: #00000041;
+            padding: 17px;
+            border: none;
+            color: white;
+            cursor: pointer;
+
+            &:hover {
+                transition: 0.5s;
+                background: #000000a1;
+
+            }
+        }
+
+        .right {
+            right: 0;
+            position: absolute;
+            height: 100%;
+            top: 0;
+            background: #00000041;
+            padding: 20px;
+            border: none;
+            color: white;
+            cursor: pointer;
+
+            &:hover {
+                transition: 0.5s;
+                background: #000000a1;
+
+            }
+        }
+
+
     }
+
+
+    //     }
 
 }

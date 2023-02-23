@@ -22,6 +22,7 @@
 @import "cmps/photo-preview";
 @import "cmps/photo-list";
 @import "cmps/footer";
+@import "cmps/about";
 @import "cmps/loading";
 @import "cmps/modal";
 @import "cmps/mobail";
@@ -29,3 +30,14 @@
 @import "cmps/back-button";
 @import "cmps/contact-form";
 @import "cmps/page-questions";
+
+.scroll-to-bottom {
+    cursor: pointer;
+    color: black;
+    font-weight: 500;
+
+    &:hover {
+
+        color: rgb(96, 45, 24);
+    }
+}

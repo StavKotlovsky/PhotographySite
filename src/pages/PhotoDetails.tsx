@@ -4,7 +4,6 @@ import { PhotoPreview } from '../cmps/PhotoPreview'
 import { useFetchEffect } from '../hooks/useFetchEffect'
 import { Photo, photoService } from '../services/photo-service'
 import { Loader } from '../cmps/Loader'
-// import NextButton from '../cmps/NextButton'
 
 export const PhotoDetails = () => {
   const [photo, setPhoto] = useState<Photo>()
@@ -36,14 +35,18 @@ export const PhotoDetails = () => {
 
   if (!photo) return <Loader />
   return (
-    <section className="photo-details-container">
-      <button onClick={() => window.history.back()}>חזור</button>
+    <section className="photo-details-container page-container">
+      <button className="back-button" onClick={() => window.history.back()}>
+        חזור
+      </button>
       <div className="photo-details">
         <PhotoPreview path={photo.path} />
-      </div>
-      <div className="photo-navigation">
-        <button onClick={() => onNextClick(-1)}>הקודם</button>
-        <button onClick={() => onNextClick(1)}>הבא</button>
+        <button className="left" onClick={() => onNextClick(-1)}>
+          הקודם
+        </button>
+        <button className="right" onClick={() => onNextClick(1)}>
+          הבא
+        </button>
       </div>
     </section>
   )

@@ -6,6 +6,7 @@ import { useFetchEffect } from '../hooks/useFetchEffect'
 
 import { Loader } from '../cmps/Loader'
 import Questions from '../cmps/Questions'
+import ScrollBottom from '../cmps/ScrollBottum'
 
 export const PregnancyPage = () => {
   const [photos, setPhotos] = useState<Photo[]>([])
@@ -26,6 +27,7 @@ export const PregnancyPage = () => {
         יצירת הזיכרון הראשון עם הגוזל שלך ויצירת הזיכרון האחרון עם הבטן לפני
         הכניסה לחדר הלידה, זהו זיכרון קסום ומלא עוצמה של אהבה והרמוניה משפחתית
         המרגשת כל פעם מחדש
+        <ScrollBottom />
       </p>
       <PhotoList photos={photos} />
       <section>

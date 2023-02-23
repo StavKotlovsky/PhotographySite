@@ -13,10 +13,10 @@
 
     .grid-home-page {
         a {
-            .icon {
+            span {
                 opacity: 1;
                 color: rgb(255 255 255);
-                background-color: #eda6c628;
+                background-color: rgba(0, 0, 0, 0.321);
             }
         }
     }
@@ -24,7 +24,11 @@
     .about {
         padding: 0;
         gap: 0;
-        margin-bottom: 25%;
+
+        .about-image {
+            width: 60%;
+
+        }
 
         span {
             width: 100%;
@@ -32,10 +36,6 @@
             line-height: 25px;
             font-family: 'Segoe UI';
         }
-    }
-
-    footer {
-        display: none;
     }
 
     .photo-details-container {

@@ -11,9 +11,8 @@ import { ContactForm } from '../cmps/ContactForm'
 
 export const HomePage = () => {
   return (
-    <section className="home-page flex">
+    <section className="home-page flex page-container">
       <span className="flower"></span>
-      <SocialMedia />
       <div className="home-page-content">
         <ImageGallery
           items={photoService.carouselPhotos}
@@ -24,19 +23,20 @@ export const HomePage = () => {
         <div className="grid-home-page">
           <NavLink to="/family">
             <img className="navlink-img" src={img102} alt="family" />
-            <span className="icon">משפחה- איחוד משפחתי</span>
+            <span>משפחה- איחוד משפחתי</span>
           </NavLink>
 
           <NavLink to="/business">
             <img className="navlink-img" src={img103} alt="business" />
-            <span className="icon">עסקים- תדמית</span>
+            <span>עסקים- תדמית</span>
           </NavLink>
 
-          <NavLink className="pregnency-navlink" to="/pregnency">
+          <NavLink to="/pregnency">
             <img className="navlink-img" src={img101} alt="pregnency" />
-            <span className="icon">הריון- פרי הבטן</span>
+            <span>הריון- פרי הבטן</span>
           </NavLink>
         </div>
+        <SocialMedia />
         <About />
         <ContactForm />
       </div>

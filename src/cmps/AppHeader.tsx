@@ -31,6 +31,9 @@ export function AppHeader() {
           </NavLink>
         </div>
         <span className={`flower ${showFlower ? 'show' : ''}`}></span>
+        <NavLink to="/business">עסקים</NavLink>
+        <NavLink to="/pregnency">הריון</NavLink>
+        <NavLink to="/family">משפחה</NavLink>
         <NavLink to="/">בית</NavLink>
       </nav>
     </header>

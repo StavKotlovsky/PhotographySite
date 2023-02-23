@@ -6,66 +6,24 @@
     padding-top: calc($app-header-height + 33px);
 }
 
+.flower {
+    width: 4.4em;
+    height: 4.4em;
+    background-image: url('../../img/lotus.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+
 .home-page-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     position: relative;
-
-    h1 {
-        padding: 10px;
-        font-weight: 600;
-    }
-}
-
-.about {
-    display: flex;
-    gap: 40px;
-    margin-top: 4%;
-    flex-wrap: wrap;
-    padding: 50px;
-    align-items: center;
-    justify-content: center;
-    border-top: 1px solid rgba(81, 24, 109, 0.158);
-
-    span {
-        width: 50%;
-        line-height: 25px;
-        font-family: 'Segoe UI';
-
-        h1,
-        h2 {
-            font-size: initial;
-        }
-    }
-
-    .about-image {
-        background-image: url('../../img/roni-image.jpeg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top center;
-        width: 300px;
-        height: 300px;
-        border-radius: 100%;
-    }
-}
-
-.image-gallery-image {
-    max-height: calc(90vh - 80px) !important;
-    margin: 0 !important;
-    padding: 15px;
-}
-
-.image-gallery-svg {
-    height: 70px !important;
 }
 
 
-.image-gallery-fullscreen-button,
-.image-gallery-play-button {
-    display: none;
-}
 
 .grid-home-page {
     display: grid;
@@ -73,37 +31,47 @@
     width: 100%;
     margin-top: 80px;
     grid-row-gap: 50px;
+    gap: 10px;
 
     a {
         position: relative;
+        width: 100%;
 
         img {
-            width: 80%;
-
-
+            border-radius: 10px;
+            filter: blur(1px);
+            overflow: hidden;
         }
 
-        .icon {
+        span {
+            border-radius: 10px;
             width: 100%;
+            height: 100%;
             text-align: center;
-            font-size: 25px;
+            font-size: 20px;
             display: flex;
-            align-items: center;
+            align-items: flex-end;
+            padding-bottom: 20px;
             position: absolute;
             left: 0;
             right: 0;
             top: 0;
             bottom: 0;
             color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI',
+                Tahoma,
+                Geneva,
+                Verdana,
+                sans-serif;
             justify-content: center;
             font-weight: 600;
-            opacity: 0;
+            background-color: rgba(0, 0, 0, 0.162);
+
 
             &:hover {
-                opacity: 1;
-                transition: 0.9s;
-                background-color: rgba(255, 255, 255, 0.218);
+                transition: 1.4s;
+                height: 30%;
+
             }
         }
 
@@ -111,10 +79,36 @@
 
 }
 
-.flower {
-    width: 4.4em;
-    height: 4.4em;
-    background-image: url('../../img/lotus.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+.image-gallery-image {
+    max-height: calc(80vh - 70%) !important;
+}
+
+.image-gallery-svg {
+    height: 15% !important;
+
+}
+
+.image-gallery-right-nav {
+    right: 0;
+    height: 100%;
+    background: #00000013;
+
+    &:hover {
+        background: #00000044;
+    }
+}
+
+.image-gallery-left-nav {
+    height: 100%;
+    background: #00000013;
+
+    &:hover {
+        background: #00000044;
+    }
+}
+
+.image-gallery-fullscreen-button,
+.image-gallery-play-button {
+    display: none;
+
 }

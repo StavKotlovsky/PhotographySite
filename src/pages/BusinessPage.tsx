@@ -4,6 +4,7 @@ import { useFetchEffect } from '../hooks/useFetchEffect'
 import { Photo, photoService } from '../services/photo-service'
 
 import { Loader } from '../cmps/Loader'
+import ScrollBottom from '../cmps/ScrollBottum'
 
 export const BusinessPage = () => {
   const [photos, setPhotos] = useState<Photo[]>([])
@@ -24,6 +25,7 @@ export const BusinessPage = () => {
       <p>
         כיום בעזרת המדיה אנחנו חושפים את עצמנו לעולם בשלל דרכים אז למה שלא
         תשקיעו בעצמכם קצת יותר בתמונת תדמית או תמונות לעסק
+        <ScrollBottom />
       </p>
       <PhotoList photos={photos} />
     </section>

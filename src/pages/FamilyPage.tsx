@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Loader } from '../cmps/Loader'
 import { PhotoList } from '../cmps/PhotoList'
+import ScrollBottom from '../cmps/ScrollBottum'
 import { useFetchEffect } from '../hooks/useFetchEffect'
 import { Photo, photoService } from '../services/photo-service'
 
@@ -24,6 +25,7 @@ export const FamilyPage = () => {
       <p>
         צילומי משפחה זה לא רק מזכרת אותנטית מקצועית ואיכותית של היקרים לנו מכל
         זו גם חוויה נפלאה ומאחדת לכל המשפחה
+        <ScrollBottom />
       </p>
       <PhotoList photos={photos} />
     </section>
