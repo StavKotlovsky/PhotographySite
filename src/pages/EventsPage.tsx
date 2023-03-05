@@ -5,12 +5,12 @@ import { Photo, photoService } from '../services/photo-service'
 
 import { Loader } from '../cmps/Loader'
 import ScrollBottom from '../cmps/ScrollBottum'
-import Questions from '../cmps/Questions'
 
-export const BusinessPage = () => {
+export const EventsPage = () => {
   const [photos, setPhotos] = useState<Photo[]>([])
   const loadPhotos = async () => {
-    const photos = await photoService.getPhotosByTag('business')
+    const photos = await photoService.getPhotosByTag('events')
+    console.log(photos)
     setPhotos(photos)
   }
 
@@ -28,13 +28,6 @@ export const BusinessPage = () => {
         <ScrollBottom />
       </p>
       <PhotoList photos={photos} />
-      <Questions
-        answer='בעלי עסקים קטנים, בעלי חברות, עורכי דין,  מנכ"לים ,נושאי משרה בכירים וכל סוגי העסקים.
-לא רק לבעלי עסקים מומלץ צילומי תדמית אלא לכולם, כן אני מדברת על תמונת הפרופיל בפייסבוק או באינסטרם .
-כיום בעזרת המדיה אנחנו חושפים את עצמנו לעולם בשלל דרכים אז למה שלא תשקיעו בעצמכם קצת יותר בתמונת תדמית לפרופיל שלכם תשמש אתכם בווצאפ וברחבי המדיה ותשקף את מי שאתם ברמה מקצועית ואיכותית.
-'
-        question="?למי נועדו צילומי תדמית"
-      />
     </section>
   )
 }

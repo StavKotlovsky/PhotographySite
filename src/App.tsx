@@ -5,6 +5,8 @@ import { FamilyPage } from './pages/FamilyPage'
 import { HomePage } from './pages/HomePage'
 import { PhotoDetails } from './pages/PhotoDetails'
 import { PregnancyPage } from './pages/PregnancyPage'
+import { EventsPage } from './pages/EventsPage'
+
 import { Footer } from './cmps/Footer'
 
 import './assets/scss/main.scss'
@@ -20,6 +22,7 @@ function App() {
           <Route path="/family" element={<FamilyPage />} />
           <Route path="/pregnency" element={<PregnancyPage />} />
           <Route path="/business" element={<BusinessPage />} />
+          <Route path="/events" element={<EventsPage />} />
         </Routes>
         <Footer />
       </section>

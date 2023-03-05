@@ -18,7 +18,6 @@ export const PhotoDetails = () => {
     const photoId = params.id as string
     const photo = await photoService.getPhotoById(photoId)
     setPhoto(photo)
-    console.log(photo)
   }
 
   async function onNextClick(diff: number) {

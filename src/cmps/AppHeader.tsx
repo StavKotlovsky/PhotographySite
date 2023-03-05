@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import logoUrl from '../assets/logo/logo.png'
-// import { useHistory } from 'react-router-dom';
 
 export function AppHeader() {
   const [showFlower, setShowFlower] = useState(false)
-  // const history = useHistory()
 
   useEffect(() => {
     const onScroll = (ev: Event) => {
@@ -31,6 +29,7 @@ export function AppHeader() {
           </NavLink>
         </div>
         <span className={`flower ${showFlower ? 'show' : ''}`}></span>
+        <NavLink to="/events">אירועים</NavLink>
         <NavLink to="/business">עסקים</NavLink>
         <NavLink to="/pregnency">הריון</NavLink>
         <NavLink to="/family">משפחה</NavLink>

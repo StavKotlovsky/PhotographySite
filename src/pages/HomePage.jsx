@@ -35,6 +35,10 @@ export const HomePage = () => {
             <img className="navlink-img" src={img101} alt="pregnency" />
             <span>הריון- פרי הבטן</span>
           </NavLink>
+          <NavLink to="/events">
+            <img className="navlink-img" src={img101} alt="events" />
+            <span>אירועים קטנים</span>
+          </NavLink>
         </div>
         <SocialMedia />
         <About />

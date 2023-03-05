@@ -1,9 +1,9 @@
-.page-questions {
+.questions {
     display: flex;
     flex-direction: column;
     text-align: end;
     align-items: flex-end;
-    margin-bottom: 3px;
+    margin-bottom: 23px;
 
     button {
         background: none;
@@ -11,14 +11,21 @@
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 600;
         font-size: 16px;
-        color: #0c0041;
         cursor: pointer;
         display: flex;
-        column-gap: 6px;
+        column-gap: 5px;
         align-items: center;
+        color: #481506;
+        font-weight: 500;
+
+        &:hover {
+            color: #7d260b;
+        }
+
     }
 
-    span {
+    .answer {
         padding: 4px;
+        width: 61%;
     }
 }

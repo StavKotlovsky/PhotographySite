@@ -94,7 +94,7 @@ export interface Photo {
 interface CloudinaryPhoto {
   public_id: string
   context?: {
-    custom: {
+    custom?: {
       alt: string
       caption: string
     }
