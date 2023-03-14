@@ -30,6 +30,7 @@ export const PregnancyPage = () => {
         <ScrollBottom />
       </p>
       <PhotoList photos={photos} />
+      <h4 className="title-list">שאלות ותשובות</h4>
       <Questions
         answer="מומלץ לאחר שבוע 28 כשהבטן יוצאת ועוד לשבוע  34 "
         question="?אז מתי בעצם הבטן מוכנה לצילומים"

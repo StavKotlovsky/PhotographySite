@@ -28,6 +28,7 @@ export const FamilyPage = () => {
         <ScrollBottom />
       </p>
       <PhotoList photos={photos} />
+      <h4 className="title-list">שאלות ותשובות</h4>
       <Questions
         answer="איפה שרק תרצו! אפשר בבית , אפשר גם בטבע ותמיד אפשר גם לגוון ולשנות מיקום,
 העיקר שתרגישו נוחות ואיתה מגיעה הקלילות וכמובן שגם אני שם איתכם לעזור לכם להשתחרר

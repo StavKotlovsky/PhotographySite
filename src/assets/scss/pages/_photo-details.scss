@@ -28,12 +28,14 @@
             background: #00000041;
             padding: 17px;
             border: none;
-            color: white;
+            color: #ffffff71;
+            font-size: 51px;
             cursor: pointer;
 
             &:hover {
                 transition: 0.5s;
                 background: #000000a1;
+                color: rgb(255, 255, 255);
 
             }
         }
@@ -46,12 +48,14 @@
             background: #00000041;
             padding: 20px;
             border: none;
-            color: white;
+            color: #ffffff71;
+            font-size: 51px;
             cursor: pointer;
 
             &:hover {
                 transition: 0.5s;
                 background: #000000a1;
+                color: rgb(255, 255, 255);
 
             }
         }

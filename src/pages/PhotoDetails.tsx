@@ -28,23 +28,20 @@ export const PhotoDetails = () => {
     )
     if (nextPhotoId) {
       navigate(`/photos/${nextPhotoId}`)
+      loadPhotos()
     }
-    setPhoto(photo)
   }
 
   if (!photo) return <Loader />
   return (
     <section className="photo-details-container page-container">
-      <button className="back-button" onClick={() => window.history.back()}>
-        חזור
-      </button>
       <div className="photo-details">
         <PhotoPreview path={photo.path} />
         <button className="left" onClick={() => onNextClick(-1)}>
-          הקודם
+          🠸
         </button>
         <button className="right" onClick={() => onNextClick(1)}>
-          הבא
+          🠺
         </button>
       </div>
     </section>

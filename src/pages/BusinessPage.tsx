@@ -28,6 +28,7 @@ export const BusinessPage = () => {
         <ScrollBottom />
       </p>
       <PhotoList photos={photos} />
+      <h4 className="title-list">שאלות ותשובות</h4>
       <Questions
         answer='בעלי עסקים קטנים, בעלי חברות, עורכי דין,  מנכ"לים ,נושאי משרה בכירים וכל סוגי העסקים.
 לא רק לבעלי עסקים מומלץ צילומי תדמית אלא לכולם, כן אני מדברת על תמונת הפרופיל בפייסבוק או באינסטרם .
