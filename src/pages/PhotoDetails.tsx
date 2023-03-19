@@ -5,6 +5,9 @@ import { useFetchEffect } from '../hooks/useFetchEffect'
 import { Photo, photoService } from '../services/photo-service'
 import { Loader } from '../cmps/Loader'
 
+import next from '../assets/icon/next.png'
+import back from '../assets/icon/back.png'
+
 export const PhotoDetails = () => {
   const [photo, setPhoto] = useState<Photo>()
   const params = useParams()
@@ -38,10 +41,10 @@ export const PhotoDetails = () => {
       <div className="photo-details">
         <PhotoPreview path={photo.path} />
         <button className="left" onClick={() => onNextClick(-1)}>
-          🠸
+          <img src={back} alt="" />
         </button>
         <button className="right" onClick={() => onNextClick(1)}>
-          🠺
+          <img src={next} alt="" />
         </button>
       </div>
     </section>

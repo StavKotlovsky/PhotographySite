@@ -15,3 +15,14 @@
         }
     }
 }
+
+.scroll-to-bottom {
+    cursor: pointer;
+    color: black;
+    font-weight: 500;
+
+    &:hover {
+
+        color: #c2286d;
+    }
+}

@@ -1,6 +1,7 @@
 import instagram from '../assets/icon/instagram.png'
 import facebook from '../assets/icon/facebook.png'
 import whatsapp from '../assets/icon/whatsapp.png'
+import gmail from '../assets/icon/gmail.png'
 
 export function SocialMedia() {
   return (
@@ -25,6 +26,13 @@ export function SocialMedia() {
         rel="noreferrer"
       >
         <img src={facebook} alt="" />
+      </a>
+      <a
+        href="mailto:ronkish41@gmail.com?subject=נושא&body=תוכן ההודעה"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img src={gmail} alt="" />
       </a>
     </section>
   )

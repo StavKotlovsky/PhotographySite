@@ -20,22 +20,30 @@
     .photo-details {
         position: relative;
 
+
+
         .left {
             left: 0;
             position: absolute;
             height: 100%;
             top: 0;
-            background: #00000041;
-            padding: 17px;
+            background: #0c0c0c4a;
             border: none;
-            color: #ffffff71;
-            font-size: 51px;
             cursor: pointer;
+            width: 6%;
+
+            img {
+                filter: invert(85%) sepia(3%) saturate(13%) hue-rotate(316deg) brightness(94%) contrast(77%);
+
+                &:hover {
+                    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(282deg) brightness(107%) contrast(101%);
+                }
+            }
+
 
             &:hover {
                 transition: 0.5s;
                 background: #000000a1;
-                color: rgb(255, 255, 255);
 
             }
         }
@@ -45,18 +53,22 @@
             position: absolute;
             height: 100%;
             top: 0;
-            background: #00000041;
-            padding: 20px;
+            background: #0c0c0c4a;
+            width: 6%;
             border: none;
-            color: #ffffff71;
-            font-size: 51px;
             cursor: pointer;
+
+            img {
+                filter: invert(85%) sepia(3%) saturate(13%) hue-rotate(316deg) brightness(94%) contrast(77%);
+
+                &:hover {
+                    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(282deg) brightness(107%) contrast(101%);
+                }
+            }
 
             &:hover {
                 transition: 0.5s;
                 background: #000000a1;
-                color: rgb(255, 255, 255);
-
             }
         }
 

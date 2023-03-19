@@ -1,25 +1,28 @@
-import { useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+// import { useState } from 'react'
 
 export const ContactForm = () => {
-  //   const [msg,setMsg] = useState(null)
-
-  // const handleChange = ({ target }) => {
-  //   const field = target.name
-  //   const value = target.type === 'number' ? +target.value || '' : target.value
-  //   setMsg((prevMsg) => ({ ...prevMsg, [field]: value }))
+  // const [email, setemail] = useState(null)
+  // const emailForm = {
+  //   subject: 'family',
+  //   body: 'how are you',
   // }
+  // console.log(email)
 
   return (
     <section className="form-container flex">
-      <form className="flex column">
+      {/* <form className="flex column">
         <h1>צרו קשר</h1>
-        <input type="text" placeholder="שם מלא" />
-        <input type="tel" placeholder="טלפון" />
-        <input type="email" placeholder="אימייל" />
-        <textarea rows={7} placeholder="תוכן ההודעה"></textarea>
+        <input type="text" placeholder="אימייל" value={emailForm.subject} />
+        <textarea
+          rows={7}
+          placeholder="תוכן ההודעה"
+          value={emailForm.body}
+        ></textarea>
         <button type="submit">שלח</button>
-      </form>
+      <a href="mailto:stavkot4443@gmail.com?subject=Big%20News&body=Body-goes-here">
+        Email Us
+      </a>
+      </form> */}
     </section>
   )
 }
