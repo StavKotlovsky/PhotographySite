@@ -39,7 +39,6 @@
 
         img {
             border-radius: 10px;
-            filter: blur(0.7px);
             overflow: hidden;
 
         }
@@ -66,12 +65,12 @@
                 sans-serif;
             justify-content: center;
             font-weight: 600;
-            background-color: rgba(0, 0, 0, 0.162);
+            background-color: #00000079;
 
 
             &:hover {
                 transition: 1.4s;
-                height: 30%;
+                height: 25%;
 
             }
         }

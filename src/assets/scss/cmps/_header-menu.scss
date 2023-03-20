@@ -1,0 +1,36 @@
+.header-menu {
+    display: none;
+    text-align: center;
+
+    .header-menu-button {
+        border: none;
+        background: none;
+        cursor: pointer;
+
+        img {
+            width: 40px;
+        }
+    }
+
+    .header-nav-menu {
+        position: absolute;
+        top: 87px;
+        border: none;
+        right: 0px;
+        background-color: #ffffff;
+        z-index: 2;
+        left: 0;
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+        line-height: 34px;
+        box-shadow: -2px 5px 8px 1px rgb(71 40 98 / 47%);
+        // transition: 0.8s;
+
+        a {
+            margin: 0;
+        }
+
+    }
+
+}
