@@ -5,6 +5,7 @@ import { Photo, photoService } from '../services/photo-service'
 
 import { Loader } from '../cmps/Loader'
 import { WeddingsPage } from './WeddingsPage'
+import { Outlet } from 'react-router-dom'
 
 export const EventsPage = () => {
   const [photos, setPhotos] = useState<Photo[]>([])
@@ -21,6 +22,7 @@ export const EventsPage = () => {
   if (!photos.length) return <Loader />
   return (
     <section className="page-container">
+      <Outlet />
       <h4 className="title-list">צילומי אירועים קטנים מסיבות וחתונות</h4>
       <p>
         בצילום אירועים ומסיבות עד 200 איש יש רגש ואותנטיות, הרגע הזה שאני מתעדת

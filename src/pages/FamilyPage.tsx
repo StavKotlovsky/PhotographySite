@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Outlet } from 'react-router-dom'
 import { Loader } from '../cmps/Loader'
 import { PhotoList } from '../cmps/PhotoList'
 import Questions from '../cmps/Questions'
@@ -27,6 +28,8 @@ export const FamilyPage = () => {
         זו גם חוויה נפלאה ומאחדת לכל המשפחה
         <ScrollBottom />
       </p>
+
+      <Outlet />
       <PhotoList photos={photos} />
       <h4 className="title-list">שאלות ותשובות</h4>
       <Questions

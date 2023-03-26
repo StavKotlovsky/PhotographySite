@@ -22,6 +22,9 @@ export const PhotoDetails = () => {
     const photo = await photoService.getPhotoById(photoId)
     setPhoto(photo)
   }
+  const onBack = () => {
+    navigate(`/${photo?.tagName}`)
+  }
 
   async function onNextClick(diff: number) {
     const nextPhotoId = await photoService.getNextPhotoId(
@@ -30,23 +33,24 @@ export const PhotoDetails = () => {
       diff
     )
     if (nextPhotoId) {
-      navigate(`/photos/${nextPhotoId}`)
+      navigate(`/${photo?.tagName}/${nextPhotoId}`)
       loadPhotos()
     }
   }
 
   if (!photo) return <Loader />
   return (
-    <section className="photo-details-container page-container">
-      <div className="photo-details">
-        <PhotoPreview path={photo.path} />
-        <button className="left" onClick={() => onNextClick(-1)}>
-          <img src={back} alt="" />
-        </button>
-        <button className="right" onClick={() => onNextClick(1)}>
-          <img src={next} alt="" />
-        </button>
-      </div>
+    <section className="photo-details-container">
+      <button className="back-button" onClick={onBack}>
+        חזרה
+      </button>
+      <PhotoPreview path={photo.path} />
+      <button className="left" onClick={() => onNextClick(-1)}>
+        <img src={back} alt="" />
+      </button>
+      <button className="right" onClick={() => onNextClick(1)}>
+        <img src={next} alt="" />
+      </button>
     </section>
   )
 }

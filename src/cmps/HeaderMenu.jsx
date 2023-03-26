@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import menu from '../assets/icon/menu.png'
+import ClickOutside from './ClickOutside'
 
 export function HeaderMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -15,25 +16,37 @@ export function HeaderMenu() {
         <img src={menu} alt="" />
       </button>
       {isMenuOpen && (
-        <nav className="header-nav-menu">
-          <ul className="clean-list">
-            <li>
-              <NavLink to="/">בית</NavLink>
-            </li>
-            <li>
-              <NavLink to="/family">משפחה</NavLink>
-            </li>
-            <li>
-              <NavLink to="/pregnency">הריון</NavLink>
-            </li>
-            <li>
-              <NavLink to="/business">עסקים</NavLink>
-            </li>
-            <li>
-              <NavLink to="/events">אירועים</NavLink>
-            </li>
-          </ul>
-        </nav>
+        <ClickOutside onOutsideClick={() => console.log('lalaaaa')}>
+          <nav className="header-nav-menu">
+            <ul className="clean-list">
+              <li>
+                <NavLink onClick={toggleMenu} to="/">
+                  בית
+                </NavLink>
+              </li>
+              <li>
+                <NavLink onClick={toggleMenu} to="/family">
+                  משפחה
+                </NavLink>
+              </li>
+              <li>
+                <NavLink onClick={toggleMenu} to="/pregnency">
+                  הריון
+                </NavLink>
+              </li>
+              <li>
+                <NavLink onClick={toggleMenu} to="/business">
+                  עסקים
+                </NavLink>
+              </li>
+              <li>
+                <NavLink onClick={toggleMenu} to="/events">
+                  אירועים
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+        </ClickOutside>
       )}
     </div>
   )

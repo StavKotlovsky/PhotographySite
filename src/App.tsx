@@ -18,11 +18,18 @@ function App() {
         <AppHeader />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/:popo/:id" element={<PhotoDetails />} />
-          <Route path="/family" element={<FamilyPage />} />
-          <Route path="/pregnency" element={<PregnancyPage />} />
-          <Route path="/business" element={<BusinessPage />} />
-          <Route path="/events" element={<EventsPage />} />
+          <Route path="/family" element={<FamilyPage />}>
+            <Route path=":id" element={<PhotoDetails />} />
+          </Route>
+          <Route path="/pregnency" element={<PregnancyPage />}>
+            <Route path=":id" element={<PhotoDetails />} />
+          </Route>
+          <Route path="/business" element={<BusinessPage />}>
+            <Route path=":id" element={<PhotoDetails />} />
+          </Route>
+          <Route path="/events" element={<EventsPage />}>
+            <Route path=":id" element={<PhotoDetails />} />
+          </Route>
         </Routes>
         <Footer />
       </section>

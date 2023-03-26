@@ -7,6 +7,7 @@ import { useFetchEffect } from '../hooks/useFetchEffect'
 import { Loader } from '../cmps/Loader'
 import Questions from '../cmps/Questions'
 import ScrollBottom from '../cmps/ScrollBottum'
+import { Outlet } from 'react-router-dom'
 
 export const PregnancyPage = () => {
   const [photos, setPhotos] = useState<Photo[]>([])
@@ -22,6 +23,8 @@ export const PregnancyPage = () => {
   if (!photos.length) return <Loader />
   return (
     <section className="page-container">
+      <Outlet />
+
       <h4 className="title-list">צילומי הריון - פרי הבטן</h4>
       <p>
         יצירת הזיכרון הראשון עם הגוזל שלך ויצירת הזיכרון האחרון עם הבטן לפני

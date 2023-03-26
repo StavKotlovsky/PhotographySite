@@ -6,6 +6,7 @@ import { Photo, photoService } from '../services/photo-service'
 import { Loader } from '../cmps/Loader'
 import ScrollBottom from '../cmps/ScrollBottum'
 import Questions from '../cmps/Questions'
+import { Outlet } from 'react-router-dom'
 
 export const BusinessPage = () => {
   const [photos, setPhotos] = useState<Photo[]>([])
@@ -21,6 +22,7 @@ export const BusinessPage = () => {
   if (!photos.length) return <Loader />
   return (
     <section className="page-container">
+      <Outlet />
       <h4 className="title-list"> צילומי עסקים ותדמית</h4>
       <p>
         כיום בעזרת המדיה אנחנו חושפים את עצמנו לעולם בשלל דרכים אז למה שלא
