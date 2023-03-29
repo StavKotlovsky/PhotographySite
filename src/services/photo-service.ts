@@ -8,7 +8,14 @@ const cld = new Cloudinary({
   },
 })
 
-const tagNames = ['family', 'pregnancy', 'business', 'events', 'weddings']
+const tagNames = [
+  'family',
+  'pregnancy',
+  'business',
+  'events',
+  'weddings',
+  'couples',
+]
 
 const photoDb: Photo[] = []
 

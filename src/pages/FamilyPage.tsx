@@ -6,6 +6,7 @@ import Questions from '../cmps/Questions'
 import ScrollBottom from '../cmps/ScrollBottum'
 import { useFetchEffect } from '../hooks/useFetchEffect'
 import { Photo, photoService } from '../services/photo-service'
+import { CouplesPage } from './CouplesPage'
 
 export const FamilyPage = () => {
   const [photos, setPhotos] = useState<Photo[]>([])
@@ -31,6 +32,8 @@ export const FamilyPage = () => {
 
       <Outlet />
       <PhotoList photos={photos} />
+      <CouplesPage />
+
       <h4 className="title-list">שאלות ותשובות</h4>
       <Questions
         answer="איפה שרק תרצו! אפשר בבית , אפשר גם בטבע ותמיד אפשר גם לגוון ולשנות מיקום,

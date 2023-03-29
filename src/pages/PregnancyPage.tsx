@@ -24,7 +24,6 @@ export const PregnancyPage = () => {
   return (
     <section className="page-container">
       <Outlet />
-
       <h4 className="title-list">צילומי הריון - פרי הבטן</h4>
       <p>
         יצירת הזיכרון הראשון עם הגוזל שלך ויצירת הזיכרון האחרון עם הבטן לפני

@@ -1,0 +1,28 @@
+import { useState } from 'react'
+import { PhotoList } from '../cmps/PhotoList'
+import { useFetchEffect } from '../hooks/useFetchEffect'
+import { Photo, photoService } from '../services/photo-service'
+
+import { Loader } from '../cmps/Loader'
+import { Outlet } from 'react-router-dom'
+
+export const CouplesPage = () => {
+  const [photos, setPhotos] = useState<Photo[]>([])
+  const loadPhotos = async () => {
+    const photos = await photoService.getPhotosByTag('couples')
+    setPhotos(photos)
+  }
+
+  useFetchEffect(() => {
+    loadPhotos()
+  }, [loadPhotos])
+
+  if (!photos.length) return <Loader />
+  return (
+    <section className="couples weddings-page">
+      <Outlet />
+      <h4 className="title-list"> זוגות</h4>
+      <PhotoList photos={photos} />
+    </section>
+  )
+}
