@@ -1,5 +1,4 @@
 import loadingGif from '../assets/loading/loadin2.gif'
-// import loadingGif from '../assets/loading/lineloading.gif'
 
 export function Loader() {
   return (

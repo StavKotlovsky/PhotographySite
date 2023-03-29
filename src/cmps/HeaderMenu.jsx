@@ -16,7 +16,7 @@ export function HeaderMenu() {
         <img src={menu} alt="" />
       </button>
       {isMenuOpen && (
-        <ClickOutside onOutsideClick={() => console.log('lalaaaa')}>
+        <ClickOutside onOutsideClick={() => toggleMenu}>
           <nav className="header-nav-menu">
             <ul className="clean-list">
               <li>

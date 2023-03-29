@@ -3,7 +3,6 @@ import { PhotoPreview } from './PhotoPreview'
 import { Link } from 'react-router-dom'
 
 export function PhotoList({ photos }) {
-  console.log(photos)
   return (
     <React.Fragment>
       <div className="photo-list-title"></div>
