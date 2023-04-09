@@ -8,22 +8,21 @@
     right: 0;
     left: 0;
     z-index: 20;
-    background: #101010a0;
+    background: rgba(16, 16, 16, 0.711);
     padding: 32px;
 
     .back-button {
+        width: 30px;
         background: transparent;
         border: none;
-        color: rgb(210, 210, 210);
-        font-size: 18px;
         position: absolute;
-        top: 5px;
-        right: 18%;
+        right: 99px;
+        top: 10px;
+        cursor: pointer;
+        transition: 0.5s;
 
         &:hover {
-            cursor: pointer;
-            text-decoration: underline;
-            color: white;
+            filter: none;
         }
     }
 

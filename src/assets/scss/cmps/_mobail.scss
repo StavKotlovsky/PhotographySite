@@ -7,6 +7,8 @@
         }
 
         nav {
+            border: none;
+
             .header-logo {
                 flex: 0;
             }
@@ -50,9 +52,16 @@
 
     .photo-details-container {
 
+        .back-button {
+
+            top: 22%;
+            right: 10%;
+        }
+
         .photo-details {
             width: 100%;
             height: 100%;
+
 
         }
 

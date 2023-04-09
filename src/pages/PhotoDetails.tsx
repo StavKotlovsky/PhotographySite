@@ -7,6 +7,7 @@ import { Loader } from '../cmps/Loader'
 
 import next from '../assets/icon/next.png'
 import back from '../assets/icon/back.png'
+import close from '../assets/icon/close.png'
 
 export const PhotoDetails = () => {
   const [photo, setPhoto] = useState<Photo>()
@@ -42,7 +43,7 @@ export const PhotoDetails = () => {
   return (
     <section className="photo-details-container">
       <button className="back-button" onClick={onBack}>
-        חזרה
+        <img src={close} alt="" />
       </button>
       <PhotoPreview path={photo.path} />
       <button className="left" onClick={() => onNextClick(-1)}>
