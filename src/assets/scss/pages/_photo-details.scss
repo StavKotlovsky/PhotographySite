@@ -22,7 +22,7 @@
         transition: 0.5s;
 
         &:hover {
-            filter: none;
+            filter: invert(99%) sepia(1%) saturate(7497%) hue-rotate(185deg) brightness(106%) contrast(104%);
         }
     }
 

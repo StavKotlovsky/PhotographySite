@@ -8,6 +8,7 @@ import { NavLink } from 'react-router-dom'
 import { photoService } from '../services/photo-service'
 import { About } from '../cmps/About'
 import { SocialMedia } from '../cmps/SocialMedia'
+
 export const HomePage = () => {
   return (
     <section className="home-page flex page-container">
