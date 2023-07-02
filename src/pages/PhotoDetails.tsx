@@ -41,7 +41,7 @@ export const PhotoDetails = () => {
 
   if (!photo) return <Loader />
   return (
-    <section className="photo-details-container">
+    <section onClick={onBack} className="photo-details-container">
       <button className="back-button" onClick={onBack}>
         <img src={close} alt="" />
       </button>
